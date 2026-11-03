@@ -1,0 +1,27 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Masque ACL - avant/apres chmod g-w
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+
+APRES chmod g-w:
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx  #effective:r-x
+user:audit-ext:r--
+group::rwx      #effective:r-x
+group:transport:rwx     #effective:r-x
+mask::r-x
+other::---
+

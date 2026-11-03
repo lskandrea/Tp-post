@@ -1,0 +1,4 @@
+[sudo] password for nadia: 
+Sorry, user nadia is not allowed to execute '/usr/bin/vim /srv/helios/projets/transport/tournee-nadia.csv' as root on srv-core.codemax.lan.
+
+EXIT 1

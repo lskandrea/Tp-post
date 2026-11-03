@@ -1,0 +1,3 @@
+# socle Helios (pas de umask ici : ~/.bashrc est lu APRÈS /etc/profile.d et écraserait
+# le umask par groupe de la Mission 2 ; le 027 de base vient de login.defs via pam_umask)
+export EDITOR=vim HISTSIZE=5000 HISTTIMEFORMAT='%F %T '

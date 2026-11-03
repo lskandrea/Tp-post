@@ -1,0 +1,28 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Sudo - autorisations et refus verifies
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+=== AJUSTEMENT DES FICHIERS ORDINAIRES ===
+=== CONTROLES FINAUX ===
+Current configuration is valid.
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-helios-ops: parsed OK
+/etc/sudoers.d/91-nadia-edition: parsed OK
+
+Julien: restart collecteur
+
+EXIT 0
+
+Julien: restart sshd
+
+Sorry, user julien is not allowed to execute '/usr/bin/systemctl restart sshd' as root
+ on srv-core.codemax.lan.
+
+EXIT 1
+
+Julien: extension journalctl vers sshd
+
+Sorry, user julien is not allowed to execute '/usr/bin/journalctl -u helios-
+collect.service -n 5 --no-pager -u sshd' as root on srv-core.codemax.lan.
+
+EXIT 1

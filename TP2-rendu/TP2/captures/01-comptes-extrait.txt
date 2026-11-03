@@ -1,0 +1,22 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Comptes et politique - sorties enregistrees
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+UMASK           027
+PASS_MAX_DAYS   90
+PASS_MIN_DAYS   1
+PASS_WARN_AGE   14
+minlen = 12
+minclass = 3
+deny = 5
+unlock_time = 600
+fail_interval = 900
+julien:x:5100:5000:Julien Marty - chef equipe transport:/home/julien:/bin/bash
+tarek:x:5102:5001:Tarek Oualid - analyste telemetrie:/home/tarek:/bin/bash
+audit-ext:x:5103:5001:Auditeur externe - mandat Q4:/home/audit-ext:/bin/bash
+Account expires                                         : never
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 14
+Account expires                                         : Nov 24, 2026
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 14

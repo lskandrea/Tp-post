@@ -1,0 +1,71 @@
+=== REPERTOIRES SPECIAUX ===
+drwxrwxrwt. 2 root   root      4096 Nov  3 04:58 /srv/helios/depot
+drwxrwx---. 2 julien transport 4096 Nov  3 04:58 /srv/helios/projets/temoin
+drwxrws---. 2 julien transport 4096 Nov  3 04:58 /srv/helios/projets/transport
+=== HERITAGE SETGID ===
+-rw-r-----. 1 nadia transport 0  3 nov.  04:58 /srv/helios/projets/temoin/x
+-rw-r-----. 1 nadia transport 0  3 nov.  04:58 /srv/helios/projets/transport/tournee-nadia.csv
+uid=5102(tarek) gid=5001(telemetry) groupes=5001(telemetry),5000(transport) contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+-rw-r-----. 1 tarek telemetry 0  3 nov.  04:58 /srv/helios/projets/temoin/y
+-rw-r-----. 1 tarek transport 0  3 nov.  04:58 /srv/helios/projets/transport/tournee-tarek.csv
+=== STICKY BIT ===
+Suppression avec sticky: rc=1
+Suppression sans sticky: rc=0
+=== UMASK PREDIT AVANT MESURE ===
+Base 027: fichier 640, repertoire 750; masque 002: fichier 664, repertoire 775; masque 077: fichier 600.
+0027
+640 nadia:transport /tmp/tp2-u1
+750 nadia:transport /tmp/tp2-d1
+664 nadia:transport /tmp/tp2-u2
+775 nadia:transport /tmp/tp2-d2
+600 nadia:transport /tmp/tp2-u3
+0002
+-rw-rw-r--. 1 nadia transport 0  3 nov.  04:58 /srv/helios/projets/transport/partage.txt
+0027
+=== INVENTAIRE SETUID ET SETGID ===
+---s--x--x root root /usr/bin/sudo
+-r-xr-sr-x root ssh_keys /usr/libexec/openssh/ssh-keysign
+-rws--x--x root root /usr/bin/chfn
+-rws--x--x root root /usr/bin/chsh
+-rwsr-x--- root sssd /usr/libexec/sssd/krb5_child
+-rwsr-x--- root sssd /usr/libexec/sssd/ldap_child
+-rwsr-x--- root sssd /usr/libexec/sssd/proxy_child
+-rwsr-x--- root sssd /usr/libexec/sssd/selinux_child
+-rwsr-xr-x root root /usr/bin/at
+-rwsr-xr-x root root /usr/bin/chage
+-rwsr-xr-x root root /usr/bin/crontab
+-rwsr-xr-x root root /usr/bin/gpasswd
+-rwsr-xr-x root root /usr/bin/mount
+-rwsr-xr-x root root /usr/bin/newgrp
+-rwsr-xr-x root root /usr/bin/passwd
+-rwsr-xr-x root root /usr/bin/pkexec
+-rwsr-xr-x root root /usr/bin/su
+-rwsr-xr-x root root /usr/bin/umount
+-rwsr-xr-x root root /usr/lib/polkit-1/polkit-agent-helper-1
+-rwsr-xr-x root root /usr/sbin/grub2-set-bootflag
+-rwsr-xr-x root root /usr/sbin/pam_timestamp_check
+-rwsr-xr-x root root /usr/sbin/unix_chkpwd
+-rwx--s--x root slocate /usr/bin/locate
+-rwx--s--x root utmp /usr/libexec/utempter/utempter
+-rwxr-sr-x root tty /usr/bin/write
+=== SETUID IGNORE SUR UN SCRIPT ===
+-rwsr-xr-x. 1 root root 19 Nov  3 04:58 /usr/local/bin/faux-setuid.sh
+uid=5101(nadia) gid=5000(transport) groupes=5000(transport) contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+=== BINAIRE SETGID TELEMETRY ===
+drwxr-xr-x. 2 helios helios 4096 Nov  3 04:58 /var/log/helios
+-rwxr-sr-x. 1 root telemetry 17504 Nov  3 04:58 /usr/local/bin/helios-lastlog
+-rw-r-----. 1 root telemetry  1281 Nov  3 04:58 /var/log/helios/app.log
+Lecture directe: rc=1
+2026-11-03T04:58:32+01:00 INFO trame 21 ok
+2026-11-03T04:58:32+01:00 INFO trame 22 ok
+2026-11-03T04:58:32+01:00 INFO trame 23 ok
+2026-11-03T04:58:32+01:00 INFO trame 24 ok
+2026-11-03T04:58:32+01:00 INFO trame 25 ok
+2026-11-03T04:58:32+01:00 INFO trame 26 ok
+2026-11-03T04:58:32+01:00 INFO trame 27 ok
+2026-11-03T04:58:32+01:00 INFO trame 28 ok
+2026-11-03T04:58:32+01:00 INFO trame 29 ok
+2026-11-03T04:58:32+01:00 INFO trame 30 ok
+Lecture par binaire: rc=0
+rm: impossible de supprimer '/srv/helios/depot/fichier-nadia': Opération non permise
+tail: impossible d'ouvrir '/var/log/helios/app.log' en lecture: Permission non accordée

@@ -1,0 +1,15 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Heritage setgid et refus sticky - sorties enregistrees
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+-rw-r-----. 1 nadia transport 0  3 nov.  04:58 /srv/helios/projets/temoin/x
+-rw-r-----. 1 nadia transport 0  3 nov.  04:58 /srv/helios/projets/transport/tournee-
+nadia.csv
+uid=5102(tarek) gid=5001(telemetry) groupes=5001(telemetry),5000(transport) 
+contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+-rw-r-----. 1 tarek telemetry 0  3 nov.  04:58 /srv/helios/projets/temoin/y
+-rw-r-----. 1 tarek transport 0  3 nov.  04:58 /srv/helios/projets/transport/tournee-
+tarek.csv
+=== STICKY BIT ===
+Suppression avec sticky: rc=1
+Suppression sans sticky: rc=0

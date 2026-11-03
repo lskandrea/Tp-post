@@ -1,0 +1,38 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+ACL par defaut et refus auditeur - controle final
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+Current configuration is valid.
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-helios-ops: parsed OK
+/etc/sudoers.d/91-nadia-edition: parsed OK
+validation finale
+sous-dossier
+Refus ecriture auditeur: OK
+Refus creation auditeur: OK
+# file: srv/helios/projets/transport/validation-finale.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x      #effective:r--
+group::rwx      #effective:rw-
+group:transport:rwx     #effective:rw-
+mask::rw-
+other::---
+
+# file: srv/helios/projets/transport/validation-finale-dir
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---

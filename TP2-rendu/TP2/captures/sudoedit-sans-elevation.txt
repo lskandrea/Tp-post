@@ -1,0 +1,5 @@
+[sudo] password for nadia: 
+uid=5101(nadia) gid=5000(transport) groups=5000(transport) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+sudo: /srv/helios/projets/transport/tournee-nadia.csv unchanged
+
+EXIT 0

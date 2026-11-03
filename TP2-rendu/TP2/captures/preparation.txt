@@ -1,0 +1,129 @@
+=== PREPARATION ===
+2026-11-03T04:56:27+01:00
+ Static hostname: srv-core.codemax.lan
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: f3d41de90cb7466fb316548e4059c986
+         Boot ID: 7675dc4e8dba4132854e1506044df45f
+  Virtualization: oracle
+Operating System: Rocky Linux 9.8 (Blue Onyx)
+     CPE OS Name: cpe:/o:rocky:rocky:9::baseos
+          Kernel: Linux 5.14.0-687.10.1.el9_8.0.1.x86_64
+    Architecture: x86-64
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+active
+acl-2.3.1-4.el9.x86_64
+package gcc is not installed
+package vim-enhanced is not installed
+pam-1.5.1-28.el9.x86_64
+libpwquality-1.4.4-8.el9.x86_64
+sudo-1.9.17p2-3.el9_8.x86_64
+Rocky Linux 9 - BaseOS                          9.4 kB/s | 4.3 kB     00:00    
+Rocky Linux 9 - BaseOS                           19 MB/s |  44 MB     00:02    
+Rocky Linux 9 - AppStream                        16 kB/s | 4.8 kB     00:00    
+Rocky Linux 9 - AppStream                        16 MB/s |  30 MB     00:01    
+Rocky Linux 9 - Extras                          9.0 kB/s | 3.1 kB     00:00    
+Package acl-2.3.1-4.el9.x86_64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package             Arch       Version                     Repository     Size
+================================================================================
+Installing:
+ gcc                 x86_64     11.5.0-14.el9               appstream      32 M
+ vim-enhanced        x86_64     2:8.2.2637-26.el9_8.23      appstream     1.8 M
+Upgrading:
+ acl                 x86_64     2.4.0-1.el9_8               baseos         74 k
+ libacl              x86_64     2.4.0-1.el9_8               baseos         25 k
+Installing dependencies:
+ cpp                 x86_64     11.5.0-14.el9               appstream      11 M
+ glibc-devel         x86_64     2.34-266.el9_8              appstream      37 k
+ glibc-headers       x86_64     2.34-266.el9_8              appstream     443 k
+ gpm-libs            x86_64     1.20.7-29.el9               appstream      20 k
+ kernel-headers      x86_64     5.14.0-687.64.1.el9_8       appstream     2.6 M
+ libmpc              x86_64     1.2.1-4.el9                 appstream      61 k
+ libxcrypt-devel     x86_64     4.4.18-3.el9                appstream      28 k
+ vim-common          x86_64     2:8.2.2637-26.el9_8.23      appstream     6.6 M
+ vim-filesystem      noarch     2:8.2.2637-26.el9_8.23      baseos         13 k
+
+Transaction Summary
+================================================================================
+Install  11 Packages
+Upgrade   2 Packages
+
+Total download size: 55 M
+Downloading Packages:
+(1/13): vim-filesystem-8.2.2637-26.el9_8.23.noa 109 kB/s |  13 kB     00:00    
+(2/13): glibc-devel-2.34-266.el9_8.x86_64.rpm   418 kB/s |  37 kB     00:00    
+(3/13): glibc-headers-2.34-266.el9_8.x86_64.rpm 1.2 MB/s | 443 kB     00:00    
+(4/13): gpm-libs-1.20.7-29.el9.x86_64.rpm        96 kB/s |  20 kB     00:00    
+[MIRROR] kernel-headers-5.14.0-687.64.1.el9_8.x86_64.rpm: Status code: 404 for https://rocky-linux-europe-west9.production.gcp.mirrors.ctrliq.cloud/pub/rocky//9.8/AppStream/x86_64/os/Packages/k/kernel-headers-5.14.0-687.64.1.el9_8.x86_64.rpm (IP: 34.49.219.67)
+(5/13): cpp-11.5.0-14.el9.x86_64.rpm            9.6 MB/s |  11 MB     00:01    
+(6/13): libmpc-1.2.1-4.el9.x86_64.rpm           1.2 MB/s |  61 kB     00:00    
+(7/13): libxcrypt-devel-4.4.18-3.el9.x86_64.rpm 340 kB/s |  28 kB     00:00    
+(8/13): gcc-11.5.0-14.el9.x86_64.rpm             17 MB/s |  32 MB     00:01    
+(9/13): kernel-headers-5.14.0-687.64.1.el9_8.x8 2.3 MB/s | 2.6 MB     00:01    
+(10/13): vim-common-8.2.2637-26.el9_8.23.x86_64 8.8 MB/s | 6.6 MB     00:00    
+(11/13): acl-2.4.0-1.el9_8.x86_64.rpm           425 kB/s |  74 kB     00:00    
+(12/13): libacl-2.4.0-1.el9_8.x86_64.rpm        141 kB/s |  25 kB     00:00    
+(13/13): vim-enhanced-8.2.2637-26.el9_8.23.x86_ 5.4 MB/s | 1.8 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                            20 MB/s |  55 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libacl-2.4.0-1.el9_8.x86_64                           1/15 
+  Installing       : libmpc-1.2.1-4.el9.x86_64                             2/15 
+  Installing       : cpp-11.5.0-14.el9.x86_64                              3/15 
+  Installing       : kernel-headers-5.14.0-687.64.1.el9_8.x86_64           4/15 
+  Installing       : gpm-libs-1.20.7-29.el9.x86_64                         5/15 
+  Installing       : glibc-headers-2.34-266.el9_8.x86_64                   6/15 
+  Installing       : libxcrypt-devel-4.4.18-3.el9.x86_64                   7/15 
+  Installing       : glibc-devel-2.34-266.el9_8.x86_64                     8/15 
+  Installing       : vim-filesystem-2:8.2.2637-26.el9_8.23.noarch          9/15 
+  Installing       : vim-common-2:8.2.2637-26.el9_8.23.x86_64             10/15 
+  Installing       : vim-enhanced-2:8.2.2637-26.el9_8.23.x86_64           11/15 
+  Installing       : gcc-11.5.0-14.el9.x86_64                             12/15 
+  Upgrading        : acl-2.4.0-1.el9_8.x86_64                             13/15 
+  Cleanup          : acl-2.3.1-4.el9.x86_64                               14/15 
+  Cleanup          : libacl-2.3.1-4.el9.x86_64                            15/15 
+  Running scriptlet: libacl-2.3.1-4.el9.x86_64                            15/15 
+  Verifying        : vim-filesystem-2:8.2.2637-26.el9_8.23.noarch          1/15 
+  Verifying        : cpp-11.5.0-14.el9.x86_64                              2/15 
+  Verifying        : gcc-11.5.0-14.el9.x86_64                              3/15 
+  Verifying        : glibc-devel-2.34-266.el9_8.x86_64                     4/15 
+  Verifying        : glibc-headers-2.34-266.el9_8.x86_64                   5/15 
+  Verifying        : gpm-libs-1.20.7-29.el9.x86_64                         6/15 
+  Verifying        : kernel-headers-5.14.0-687.64.1.el9_8.x86_64           7/15 
+  Verifying        : libmpc-1.2.1-4.el9.x86_64                             8/15 
+  Verifying        : libxcrypt-devel-4.4.18-3.el9.x86_64                   9/15 
+  Verifying        : vim-common-2:8.2.2637-26.el9_8.23.x86_64             10/15 
+  Verifying        : vim-enhanced-2:8.2.2637-26.el9_8.23.x86_64           11/15 
+  Verifying        : acl-2.4.0-1.el9_8.x86_64                             12/15 
+  Verifying        : acl-2.3.1-4.el9.x86_64                               13/15 
+  Verifying        : libacl-2.4.0-1.el9_8.x86_64                          14/15 
+  Verifying        : libacl-2.3.1-4.el9.x86_64                            15/15 
+
+Upgraded:
+  acl-2.4.0-1.el9_8.x86_64              libacl-2.4.0-1.el9_8.x86_64             
+Installed:
+  cpp-11.5.0-14.el9.x86_64                                                      
+  gcc-11.5.0-14.el9.x86_64                                                      
+  glibc-devel-2.34-266.el9_8.x86_64                                             
+  glibc-headers-2.34-266.el9_8.x86_64                                           
+  gpm-libs-1.20.7-29.el9.x86_64                                                 
+  kernel-headers-5.14.0-687.64.1.el9_8.x86_64                                   
+  libmpc-1.2.1-4.el9.x86_64                                                     
+  libxcrypt-devel-4.4.18-3.el9.x86_64                                           
+  vim-common-2:8.2.2637-26.el9_8.23.x86_64                                      
+  vim-enhanced-2:8.2.2637-26.el9_8.23.x86_64                                    
+  vim-filesystem-2:8.2.2637-26.el9_8.23.noarch                                  
+
+Complete!
+
+=== AUTHSELECT INITIAL ===
+No existing configuration detected.

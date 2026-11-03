@@ -1,0 +1,27 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Authentification - sessions reelles
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+Changing password for user julien.
+
+Current password: 
+
+New password: 
+
+BAD PASSWORD: The password is shorter than 12 characters
+
+^C
+EXIT -1
+
+Faillock avant reset:
+nadia:
+When                Type  Source                                           Valid
+2026-11-03 04:57:36 SVC   su-l                                                 V
+2026-11-03 04:57:39 SVC   su-l                                                 V
+2026-11-03 04:57:43 SVC   su-l                                                 V
+2026-11-03 04:57:46 SVC   su-l                                                 V
+2026-11-03 04:57:49 SVC   su-l                                                 V
+
+Apres reset:
+nadia:
+When                Type  Source                                           Valid

@@ -1,0 +1,32 @@
+[
+  {
+    "user": "julien",
+    "command": "sudo -S /usr/bin/systemctl restart helios-collect.service",
+    "rc": 0,
+    "expected": 0
+  },
+  {
+    "user": "julien",
+    "command": "sudo -S /usr/bin/systemctl restart sshd",
+    "rc": 1,
+    "expected": "nonzero"
+  },
+  {
+    "user": "julien",
+    "command": "sudo -S -u helios /usr/bin/cat /var/lib/helios/telemetry.csv",
+    "rc": 0,
+    "expected": 0
+  },
+  {
+    "user": "julien",
+    "command": "sudo -S /usr/bin/journalctl -u helios-collect.service -n 5 --no-pager",
+    "rc": 0,
+    "expected": 0
+  },
+  {
+    "user": "nadia",
+    "command": "sudo -S /usr/bin/systemctl restart helios-collect.service",
+    "rc": 1,
+    "expected": "nonzero"
+  }
+]

@@ -1,0 +1,198 @@
+=== CORRECTION FINALE DES DELEGATIONS ===
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-helios-ops: parsed OK
+/etc/sudoers.d/91-nadia-edition: parsed OK
+# Delegation Helios - equipe exploitation applicative
+Cmnd_Alias HELIOS_SVC = /usr/bin/systemctl start   helios-collect.service, \
+                        /usr/bin/systemctl stop    helios-collect.service, \
+                        /usr/bin/systemctl restart helios-collect.service, \
+                        /usr/bin/systemctl --no-pager status helios-collect.service, \
+                        /usr/bin/systemctl start   helios.target, \
+                        /usr/bin/systemctl stop    helios.target
+Cmnd_Alias HELIOS_LOG = /usr/bin/journalctl -u helios-collect.service -n 5 --no-pager, \
+                        /usr/bin/journalctl -u helios-archive.service -n 5 --no-pager
+Cmnd_Alias DANGEREUX  = /usr/bin/su, /usr/bin/sudo, /usr/bin/passwd root, \
+                        /usr/bin/vi, /usr/bin/vim, /usr/bin/less, /usr/bin/find
+
+Defaults:%helios-ops  timestamp_timeout=5, passwd_tries=2, lecture=always
+Defaults:%helios-ops  log_output, iolog_dir=/var/log/sudo-io
+Defaults:%helios-ops  logfile=/var/log/sudo-helios.log
+
+%helios-ops  ALL = (root) HELIOS_SVC, HELIOS_LOG
+%helios-ops  ALL = (helios) /usr/bin/ls /var/lib/helios, /usr/bin/cat /var/lib/helios/telemetry.csv
+%helios-ops  ALL = !DANGEREUX
+Defaults:nadia !sudoedit_checkdir
+nadia ALL=(root) sudoedit /srv/helios/projets/transport/tournee-nadia.csv
+=== RESTRICTION OTHER SUR LES FICHIERS EXISTANTS ===
+=== SESSIONS ENREGISTREES ===
+Nov  3 05:02:37 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000001 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000002 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+Nov  3 05:09:06 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000004 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:09:07 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000005 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:09:08 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5 --no-pager
+Nov  3 05:02:37 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000001 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000002 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+Nov  3 05:09:06 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000004 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:09:07 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000005 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:09:08 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5 --no-pager
+Session retenue: 000006
+Replaying sudo session: /usr/bin/journalctl -u helios-collect.service -n 5 --no-pagerNov 03 05:09:06 srv-core.codemax.lan systemd[1]: Stopping Collecteur de telemetrie Helios...
+Nov 03 05:09:06 srv-core.codemax.lan systemd[1]: helios-collect.service: Deactivated successfully.
+Nov 03 05:09:06 srv-core.codemax.lan systemd[1]: Stopped Collecteur de telemetrie Helios.
+Nov 03 05:09:06 srv-core.codemax.lan systemd[1]: helios-collect.service: Consumed 2.440s CPU time, 1.7M memory peak.
+Nov 03 05:09:06 srv-core.codemax.lan systemd[1]: Started Collecteur de telemetrie Helios.
+Warning: your terminal is too small to properly replay the log.
+Log geometry is 35 x 110, your terminal's geometry is 24 x 80.
+    TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+Nov  3 05:09:06 : julien : TTY=pts/0 ; PWD=/home/julien ; USER=root ;
+    TSID=000004 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:09:07 : julien : command not allowed ; TTY=pts/0 ; PWD=/home/julien ;
+    USER=root ; COMMAND=/usr/bin/systemctl restart sshd
+Nov  3 05:09:07 : julien : TTY=pts/0 ; PWD=/home/julien ; USER=helios ;
+    TSID=000005 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:09:08 : julien : TTY=pts/0 ; PWD=/home/julien ; USER=root ;
+    TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+    --no-pager
+Nov 03 05:09:07 srv-core.codemax.lan sudo[13113]:   julien : TTY=pts/0 ; PWD=/home/julien ; USER=helios ; TSID=000005 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov 03 05:09:07 srv-core.codemax.lan sudo[13113]: pam_unix(sudo:session): session opened for user helios(uid=995) by julien(uid=5100)
+Nov 03 05:09:07 srv-core.codemax.lan sudo[13113]: pam_unix(sudo:session): session closed for user helios
+Nov 03 05:09:08 srv-core.codemax.lan sudo[13152]:   julien : TTY=pts/0 ; PWD=/home/julien ; USER=root ; TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5 --no-pager
+Nov 03 05:09:08 srv-core.codemax.lan sudo[13152]: pam_unix(sudo:session): session opened for user root(uid=0) by julien(uid=5100)
+Nov 03 05:09:08 srv-core.codemax.lan sudo[13152]: pam_unix(sudo:session): session closed for user root
+Nov 03 05:09:08 srv-core.codemax.lan sudo[13200]:    nadia : command not allowed ; TTY=pts/0 ; PWD=/home/nadia ; USER=root ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov 03 05:09:09 srv-core.codemax.lan sudo[13237]:    nadia : TTY=pts/0 ; PWD=/home/nadia ; USER=root ; COMMAND=/usr/bin/vim /srv/helios/projets/transport/tournee-nadia.csv
+Nov 03 05:09:09 srv-core.codemax.lan sudo[13237]: pam_unix(sudo:session): session opened for user root(uid=0) by nadia(uid=5101)
+Nov 03 05:09:15 srv-core.codemax.lan sudo[13237]: pam_unix(sudo:session): session closed for user root
+Nov 03 05:09:16 srv-core.codemax.lan sudo[13318]:   sysops : PWD=/home/sysops ; USER=root ; COMMAND=/bin/bash -c 'rm -f /etc/sudoers.d/99-mauvais-exemple; visudo -c'
+Nov 03 05:09:16 srv-core.codemax.lan sudo[13318]: pam_unix(sudo:session): session opened for user root(uid=0) by sysops(uid=1000)
+Nov 03 05:09:16 srv-core.codemax.lan sudo[13318]: pam_unix(sudo:session): session closed for user root
+Nov 03 05:09:17 srv-core.codemax.lan sudo[13383]:   sysops : PWD=/home/sysops ; USER=root ; COMMAND=/bin/bash /tmp/helios-tp2-finalisation.sh
+Nov 03 05:09:17 srv-core.codemax.lan sudo[13383]: pam_unix(sudo:session): session opened for user root(uid=0) by sysops(uid=1000)
+=== AUDIT LOCAL EN LECTURE SEULE ===
+sysops 1000 /bin/bash
+julien 5100 /bin/bash
+nadia 5101 /bin/bash
+tarek 5102 /bin/bash
+audit-ext 5103 /bin/bash
+drwxrwxrwt /srv/helios/depot
+drwxrws--- transport /srv/helios/projets/transport
+drwxrws--- transport /srv/helios/projets/transport/semaine-41
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+
+# file: srv/helios/projets/transport/semaine-41
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: srv/helios/projets/transport/semaine-41/controle.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+
+# file: srv/helios/projets/transport/nouvelle.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
+# file: srv/helios/projets/transport/tournee-tarek.csv
+# owner: tarek
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::r--
+mask::r--
+other::---
+
+# file: srv/helios/projets/transport/partage.txt
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
+# file: srv/helios/projets/transport/tournee-nadia.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::r--
+mask::r--
+other::---
+
+Matching Defaults entries for julien on srv-core:
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, timestamp_timeout=5, passwd_tries=2, lecture=always, log_output, iolog_dir=/var/log/sudo-io, logfile=/var/log/sudo-helios.log
+
+User julien may run the following commands on srv-core:
+    (root) /usr/bin/systemctl start helios-collect.service, /usr/bin/systemctl stop helios-collect.service, /usr/bin/systemctl restart helios-collect.service, /usr/bin/systemctl --no-pager status helios-collect.service, /usr/bin/systemctl start helios.target, /usr/bin/systemctl stop helios.target, /usr/bin/journalctl -u helios-collect.service -n 5 --no-pager, /usr/bin/journalctl -u helios-archive.service -n 5 --no-pager
+    (helios) /usr/bin/ls /var/lib/helios, /usr/bin/cat /var/lib/helios/telemetry.csv
+    (root) !/usr/bin/su, !/usr/bin/sudo, !/usr/bin/passwd root, !/usr/bin/vi, !/usr/bin/vim, !/usr/bin/less, !/usr/bin/find
+Matching Defaults entries for nadia on srv-core:
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, !sudoedit_checkdir
+
+User nadia may run the following commands on srv-core:
+    (root) sudoedit /srv/helios/projets/transport/tournee-nadia.csv
+User tarek is not allowed to run sudo on srv-core.
+User audit-ext is not allowed to run sudo on srv-core.
+Last password change					: Nov 03, 2026
+Password expires					: Feb 01, 2027
+Password inactive					: Feb 08, 2027
+Account expires						: Nov 24, 2026
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
+=== ETAT DES SERVICES TP1 ===
+active
+enabled
+enabled
+=== EXPORT DES CONFIGURATIONS ===
+Finalisation terminee

@@ -1,0 +1,197 @@
+=== SYSTEME DE FICHIERS ===
+/dev/sda1 on / type ext4 (rw,relatime,seclabel)
+Racine ext4 sur cette VM; ACL POSIX prises en charge sans reformatage.
+=== ACL NOMINATIVE ===
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+
+drwxrws---+ 2 julien transport 4096 Nov  3 05:00 /srv/helios/projets/transport
+total 16
+-rw-rw----+ 1 nadia transport 0  3 nov.  05:01 nouvelle.csv
+-rw-rw-r--+ 1 nadia transport 0  3 nov.  04:58 partage.txt
+-rw-r-----+ 1 nadia transport 0  3 nov.  04:58 tournee-nadia.csv
+-rw-r-----+ 1 tarek transport 0  3 nov.  04:58 tournee-tarek.csv
+Ecriture auditeur: rc=1
+=== FICHIER SANS ACL PAR DEFAUT ===
+Lecture nouveau fichier avant ACL par defaut: rc=0 (umask 002 donne other::r--).
+Le fichier est lisible via other, sans ACL nominative: ce test seul ne prouve pas la bonne configuration.
+# file: srv/helios/projets/transport/nouvelle.csv
+# owner: nadia
+# group: transport
+user::rw-
+group::rw-
+other::r--
+
+Lecture apres retrait other::r--, sans ACL nominative: rc=1
+=== ACL PAR DEFAUT DE L ENONCE ===
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: srv/helios/projets/transport/semaine-41
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+Lecture nouveau fichier apres ACL par defaut: rc=0
+=== VERIFICATION TRAVERSEE SOUS-REPERTOIRE ===
+Traverse avec default r--: rc=1
+Correction: rx par defaut, x retire des fichiers ordinaires par mode 0666.
+test-audit
+# file: srv/helios/projets/transport/semaine-41/controle.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+=== MASQUE ACL AVANT ===
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+
+=== MASQUE ACL APRES CHMOD G-W ===
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx	#effective:r-x
+user:audit-ext:r--
+group::rwx	#effective:r-x
+group:transport:rwx	#effective:r-x
+mask::r-x
+other::---
+
+Ecriture Tarek masque r-x: rc=1
+Ecriture Tarek masque rwx: rc=0
+=== SAUVEGARDE RESTAURATION ===
+# file: transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+group::rwx
+other::---
+
+Restauration identique: rc=0
+# file: transport-copie
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: transport-copie2
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::---
+
+drwxrws---+ julien/transport  0 2026-11-03 05:01 transport/
+-rw-rwx---+ nadia/transport   2 2026-11-03 05:01 transport/tournee-j2.csv
+drwxrws---+ nadia/transport   0 2026-11-03 05:01 transport/semaine-41/
+-rw-rw----+ nadia/transport  11 2026-11-03 05:01 transport/semaine-41/controle.csv
+-rw-rw----+ nadia/transport   0 2026-11-03 05:01 transport/nouvelle.csv
+-rw-r-----+ tarek/transport   0 2026-11-03 04:58 transport/tournee-tarek.csv
+-rw-rw-r--+ nadia/transport   0 2026-11-03 04:58 transport/partage.txt
+-rw-r-----+ nadia/transport   0 2026-11-03 04:58 transport/tournee-nadia.csv
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+getfacl: Removing leading '/' from absolute path names
+getfacl: Removing leading '/' from absolute path names
+touch: impossible de faire un touch '/srv/helios/projets/transport/interdit': Permission non accordée
+getfacl: Removing leading '/' from absolute path names
+cat: /srv/helios/projets/transport/nouvelle.csv: Permission non accordée
+getfacl: Removing leading '/' from absolute path names
+-bash: ligne 1 : cd: /srv/helios/projets/transport/semaine-41: Permission non accordée
+getfacl: Removing leading '/' from absolute path names
+getfacl: Removing leading '/' from absolute path names
+getfacl: Removing leading '/' from absolute path names
+-bash: ligne 1: /srv/helios/projets/transport/tournee-j2.csv: Permission non accordée
+Warning: option --restore=file is unsafe without option -P (--physical) as it traverses symbolic links in pathnames
+getfacl: Removing leading '/' from absolute path names

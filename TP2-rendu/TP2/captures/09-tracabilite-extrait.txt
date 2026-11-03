@@ -1,0 +1,47 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Sudo - sessions enregistrees et rejouees
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+Nov  3 05:02:37 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000001 ; COMMAND=/usr/bin/systemctl restart 
+helios-collect.service
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=helios ; TSID=000002 ; COMMAND=/usr/bin/cat 
+/var/lib/helios/telemetry.csv
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-
+collect.service -n 5
+Nov  3 05:09:06 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000004 ; COMMAND=/usr/bin/systemctl restart 
+helios-collect.service
+Nov  3 05:09:07 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=helios ; TSID=000005 ; COMMAND=/usr/bin/cat 
+/var/lib/helios/telemetry.csv
+Nov  3 05:09:08 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-
+collect.service -n 5 --no-pager
+Nov  3 05:10:47 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000007 ; COMMAND=/usr/bin/systemctl restart 
+helios-collect.service
+Nov  3 05:10:48 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; 
+CWD=/home/julien ; USER=root ; TSID=000008 ; COMMAND=/usr/bin/journalctl -u helios-
+collect.service -n 5 --no-pager
+
+/usr/bin/journalctl -u helios-collect.service -n 5 --no-pagerNov 03 05:09:06 srv-
+core.codemax.lan systemd[1]: Started Collecteur de telemetrie Helios.
+
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Stopping Collecteur de telemetrie 
+Helios...
+
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: helios-collect.service: Deactivated 
+successfully.
+
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Stopped Collecteur de telemetrie 
+Helios.
+
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Started Collecteur de telemetrie 
+Helios.
+
+Warning: your terminal is too small to properly replay the log.
+Log geometry is 35 x 110, your terminal's geometry is 24 x 80.
+

@@ -1,0 +1,94 @@
+=== AJUSTEMENT DES FICHIERS ORDINAIRES ===
+=== CONTROLES FINAUX ===
+Current configuration is valid.
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-helios-ops: parsed OK
+/etc/sudoers.d/91-nadia-edition: parsed OK
+validation finale
+sous-dossier
+Refus ecriture auditeur: OK
+Refus creation auditeur: OK
+# file: srv/helios/projets/transport/validation-finale.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: srv/helios/projets/transport/validation-finale-dir
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+nadia:
+When                Type  Source                                           Valid
+Last password change					: Nov 02, 2026
+Password expires					: Jan 31, 2027
+Password inactive					: Feb 07, 2027
+Account expires						: never
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
+Last password change					: Nov 03, 2026
+Password expires					: Feb 01, 2027
+Password inactive					: Feb 08, 2027
+Account expires						: Nov 24, 2026
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
+drwxrwxrwt. 2 root   root      4096 Nov  3 04:58 /srv/helios/depot
+drwxrwx---. 2 julien transport 4096 Nov  3 04:58 /srv/helios/projets/temoin
+drwxrws---+ 4 julien transport 4096 Nov  3 05:10 /srv/helios/projets/transport
+-rwxr-sr-x. 1 root telemetry 17504 Nov  3 04:58 /usr/local/bin/helios-lastlog
+active
+=== SUDO ET RELECTURE ===
+Matching Defaults entries for julien on srv-core:
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, timestamp_timeout=5, passwd_tries=2, lecture=always, log_output, iolog_dir=/var/log/sudo-io, logfile=/var/log/sudo-helios.log
+
+User julien may run the following commands on srv-core:
+    (root) /usr/bin/systemctl start helios-collect.service, /usr/bin/systemctl stop helios-collect.service, /usr/bin/systemctl restart helios-collect.service, /usr/bin/systemctl --no-pager status helios-collect.service, /usr/bin/systemctl start helios.target, /usr/bin/systemctl stop helios.target, /usr/bin/journalctl -u helios-collect.service -n 5 --no-pager, /usr/bin/journalctl -u helios-archive.service -n 5 --no-pager
+    (helios) /usr/bin/ls /var/lib/helios, /usr/bin/cat /var/lib/helios/telemetry.csv
+    (root) !/usr/bin/su, !/usr/bin/sudo, !/usr/bin/passwd root, !/usr/bin/vi, !/usr/bin/vim, !/usr/bin/less, !/usr/bin/find
+Nov  3 05:02:37 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000001 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000002 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:02:38 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+Nov  3 05:09:06 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000004 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:09:07 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=helios ; TSID=000005 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+Nov  3 05:09:08 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000006 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5 --no-pager
+Nov  3 05:10:47 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000007 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+Nov  3 05:10:48 2026 : julien : HOST=srv-core.codemax.lan ; TTY=pts/0 ; CWD=/home/julien ; USER=root ; TSID=000008 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5 --no-pager
+Replaying sudo session: /usr/bin/journalctl -u helios-collect.service -n 5 --no-pagerNov 03 05:09:06 srv-core.codemax.lan systemd[1]: Started Collecteur de telemetrie Helios.
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Stopping Collecteur de telemetrie Helios...
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: helios-collect.service: Deactivated successfully.
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Stopped Collecteur de telemetrie Helios.
+Nov 03 05:10:47 srv-core.codemax.lan systemd[1]: Started Collecteur de telemetrie Helios.
+Warning: your terminal is too small to properly replay the log.
+Log geometry is 35 x 110, your terminal's geometry is 24 x 80.
+Nov  3 05:10:47 : julien : command not allowed ; TTY=pts/0 ; PWD=/home/julien ;
+    USER=root ; COMMAND=/usr/bin/systemctl restart sshd
+Nov  3 05:10:48 : julien : TTY=pts/0 ; PWD=/home/julien ; USER=root ;
+    TSID=000008 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+    --no-pager
+Nov  3 05:10:48 : julien : command not allowed ; TTY=pts/0 ; PWD=/home/julien ;
+    USER=root ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5
+    --no-pager -u sshd
+=== SAUVEGARDE DEFINITIVE ===
+Tous les controles finaux sont passes.
+-bash: ligne 1: /srv/helios/projets/transport/validation-finale.csv: Permission non accordée
+touch: impossible de faire un touch '/srv/helios/projets/transport/validation-finale-dir/interdit': Permission non accordée
+getfacl: Removing leading '/' from absolute path names

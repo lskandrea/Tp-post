@@ -1,0 +1,30 @@
+TP2 | srv-core | Andrea Garcia Magnanon
+Vim root puis sudoedit - extraits de sessions SSH
+PREUVES ENREGISTREES - extraits SSH, pas une nouvelle execution
+--------------------------------------------------------------------------------------
+:!/usr/bin/id
+uid=0(root) gid=0(root) groups=0(root) 
+context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+:!/usr/bin/bash
+[root@srv-core nadia]# id
+uid=0(root) gid=0(root) groups=0(root) 
+context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+[root@srv-core nadia]# exit
+
+APRES CORRECTION (sudoedit):
+[sudo] password for nadia: 
+
+uid=5101(nadia) gid=5000(transport) groups=5000(transport) 
+context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+sudo: /srv/helios/projets/transport/tournee-nadia.csv unchanged
+
+EXIT 0
+
+Refus sudo vim apres correction:
+[sudo] password for nadia: 
+
+Sorry, user nadia is not allowed to execute '/usr/bin/vim 
+/srv/helios/projets/transport/tournee-nadia.csv' as root on srv-core.codemax.lan.
+
+EXIT 1

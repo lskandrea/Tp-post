@@ -1,0 +1,6 @@
+Changing password for user julien.
+Current password: 
+New password: 
+BAD PASSWORD: The password is shorter than 12 characters
+^C
+EXIT -1

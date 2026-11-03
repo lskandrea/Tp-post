@@ -1,0 +1,127 @@
+# file: transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx	#effective:rw-
+user:audit-ext:r--
+group::rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: transport/validation-finale-dir
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: transport/validation-finale-dir/fichier.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: transport/semaine-41
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r-x
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: transport/semaine-41/controle.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x	#effective:r--
+group::rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: transport/nouvelle.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
+# file: transport/tournee-tarek.csv
+# owner: tarek
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
+# file: transport/partage.txt
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
+# file: transport/validation-finale.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+
+# file: transport/tournee-nadia.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::---
+
