@@ -1,0 +1,10 @@
+PING 10.42.42.11 (10.42.42.11) 56(84) octets de données.
+64 octets de 10.42.42.11 : icmp_seq=1 ttl=64 temps=24.8 ms
+64 octets de 10.42.42.11 : icmp_seq=2 ttl=64 temps=0.644 ms
+64 octets de 10.42.42.11 : icmp_seq=3 ttl=64 temps=9.41 ms
+64 octets de 10.42.42.11 : icmp_seq=4 ttl=64 temps=1.38 ms
+64 octets de 10.42.42.11 : icmp_seq=5 ttl=64 temps=1.39 ms
+
+--- statistiques ping 10.42.42.11 ---
+5 paquets transmis, 5 reçus, 0% packet loss, time 4010ms
+rtt min/avg/max/mdev = 0.644/7.524/24.804/9.218 ms

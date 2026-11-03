@@ -1,0 +1,8 @@
+PING 10.42.0.11 (10.42.0.11) 56(84) octets de données.
+64 octets de 10.42.0.11 : icmp_seq=1 ttl=64 temps=8.52 ms
+64 octets de 10.42.0.11 : icmp_seq=2 ttl=64 temps=1.82 ms
+64 octets de 10.42.0.11 : icmp_seq=3 ttl=64 temps=1.56 ms
+
+--- statistiques ping 10.42.0.11 ---
+3 paquets transmis, 3 reçus, 0% packet loss, time 2005ms
+rtt min/avg/max/mdev = 1.564/3.968/8.517/3.218 ms

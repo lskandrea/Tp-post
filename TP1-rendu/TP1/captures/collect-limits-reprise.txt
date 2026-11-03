@@ -1,0 +1,5 @@
+CPUQuotaPerSecUSec=200ms
+IOWeight=50
+MemoryMax=100663296
+Environment=HELIOS_INTERVAL=5
+Nice=5

@@ -1,0 +1,13 @@
+The time when unit became active or started is printed after the "@" character.
+The time the unit took to start is printed after the "+" character.
+
+multi-user.target @17.911s
+└─tuned.service @7.641s +10.269s
+  └─polkit.service @17.239s +1.233s
+    └─basic.target @3.947s
+      └─dbus-broker.service @3.856s +88ms
+        └─dbus.socket @3.847s
+          └─sysinit.target @3.838s
+            └─swap.target @3.838s
+              └─dev-disk-by\x2duuid-72528afc\x2d1d5b\x2d407d\x2d8bbb\x2d5f53128c2178.swap @3.814s +24ms
+                └─dev-disk-by\x2duuid-72528afc\x2d1d5b\x2d407d\x2d8bbb\x2d5f53128c2178.device @584542y 2w 2d 20h 1min 48.317s +5.045s

@@ -1,0 +1,8 @@
+nov. 02 18:32:35 srv-core.codemax.lan helios-archive[5770]: demarrage
+nov. 02 18:32:35 srv-core.codemax.lan helios-archive[5780]: archive /var/lib/helios/archives/telemetry-20261102-183235.csv.gz (2 lignes)
+nov. 02 18:32:35 srv-core.codemax.lan helios-archive[5784]: purge : 0 archive(s) supprimee(s)
+nov. 02 18:32:35 srv-core.codemax.lan helios-archive[5786]: fin d execution rc=0
+nov. 02 18:32:36 srv-core.codemax.lan helios-archive[5795]: une autre instance tourne deja
+nov. 02 18:32:36 srv-core.codemax.lan helios-archive[5796]: fin d execution rc=2
+nov. 02 18:32:43 srv-core.codemax.lan helios-archive[5810]: source illisible : /var/lib/helios/telemetry.csv
+nov. 02 18:32:43 srv-core.codemax.lan helios-archive[5811]: fin d execution rc=3

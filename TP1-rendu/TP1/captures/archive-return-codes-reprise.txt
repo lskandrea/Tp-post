@@ -1,0 +1,3 @@
+succes=0
+verrou=2
+source_absente=3

@@ -1,0 +1,3 @@
+helios-archive success rc=0
+helios-archive locked rc=2
+helios-archive missing source rc=3

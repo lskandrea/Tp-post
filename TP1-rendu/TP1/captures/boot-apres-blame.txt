@@ -1,0 +1,15 @@
+15.387s dev-ttyS2.device
+15.387s sys-devices-platform-serial8250-tty-ttyS2.device
+15.340s sys-devices-platform-serial8250-tty-ttyS3.device
+15.340s dev-ttyS3.device
+15.324s dev-ttyS0.device
+15.324s sys-devices-platform-serial8250-tty-ttyS0.device
+15.324s dev-ttyS1.device
+15.324s sys-devices-platform-serial8250-tty-ttyS1.device
+15.220s sys-module-configfs.device
+12.114s dracut-initqueue.service
+ 6.262s kdump.service
+ 5.006s dev-disk-by\x2duuid-7066ee60\x2dfa4f\x2d422f\x2d9f32\x2d1f859f8d6130.device
+ 5.006s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VB8d5c06d1\x2d0dc86207\x2dpart1.device
+ 5.006s dev-sda1.device
+ 5.006s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart1.device

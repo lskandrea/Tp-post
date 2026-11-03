@@ -1,0 +1,14 @@
+● helios-collect.service - Collecteur de telemetrie Helios
+     Loaded: loaded (/etc/systemd/system/helios-collect.service; enabled; preset: disabled)
+    Drop-In: /etc/systemd/system/helios-collect.service.d
+             └─override.conf
+     Active: active (running) since Mon 2026-11-02 18:32:28 CET; 2s ago
+       Docs: https://wiki.helios.lan/collect
+   Main PID: 5664 (helios-collect.)
+      Tasks: 2 (limit: 10648)
+     Memory: 676.0K (max: 96.0M available: 95.3M peak: 1.3M)
+        CPU: 65ms
+     CGroup: /system.slice/helios-collect.service
+             ├─5664 /usr/bin/bash /usr/local/sbin/helios-collect.sh
+PID avant kill -9=5659
+PID après redémarrage=5664

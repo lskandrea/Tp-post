@@ -1,0 +1,3 @@
+CPUQuotaPerSecUSec=200ms
+MemoryMax=100663296
+Nice=5

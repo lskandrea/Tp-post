@@ -1,0 +1,4 @@
+nov. 02 19:44:51 srv-core.codemax.lan helios-archive[25531]: demarrage
+nov. 02 19:44:51 srv-core.codemax.lan helios-archive[25541]: archive /var/lib/helios/archives/telemetry-20261102-194451.csv.gz (835 lignes)
+nov. 02 19:44:51 srv-core.codemax.lan helios-archive[25545]: purge : 0 archive(s) supprimee(s)
+nov. 02 19:44:51 srv-core.codemax.lan helios-archive[25547]: fin d execution rc=0

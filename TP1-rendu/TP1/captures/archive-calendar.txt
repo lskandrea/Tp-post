@@ -1,0 +1,10 @@
+Normalized form: *-*-* 02:30:00
+    Next elapse: Tue 2026-11-03 02:30:00 CET
+       (in UTC): Tue 2026-11-03 01:30:00 UTC
+       From now: 7h left
+       Iter. #2: Wed 2026-11-04 02:30:00 CET
+       (in UTC): Wed 2026-11-04 01:30:00 UTC
+       From now: 1 day 7h left
+       Iter. #3: Thu 2026-11-05 02:30:00 CET
+       (in UTC): Thu 2026-11-05 01:30:00 UTC
+       From now: 2 days left

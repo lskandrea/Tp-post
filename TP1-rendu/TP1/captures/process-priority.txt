@@ -1,0 +1,6 @@
+    PID  NI PRI CLS RTPRIO COMMAND
+   5756  19   0  TS      - nice
+5756 (process ID) priorité précédente 19, nouvelle priorité 5
+best-effort : priorité 7
+stratégie d’ordonnancement actuelle pour le PID 5756 : SCHED_OTHER
+priorité de planification actuelle pour le PID 5756 : 0

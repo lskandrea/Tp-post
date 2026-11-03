@@ -1,0 +1,7 @@
+● helios-inbox.path
+     Loaded: loaded (/etc/systemd/system/helios-inbox.path; enabled; preset: disabled)
+     Active: active (waiting) since Mon 2026-11-02 19:44:51 CET; 4min 26s ago
+      Until: Mon 2026-11-02 19:44:51 CET; 4min 26s ago
+   Triggers: ● helios-archive.service
+
+nov. 02 19:44:51 srv-core.codemax.lan systemd[1]: Started helios-inbox.path.

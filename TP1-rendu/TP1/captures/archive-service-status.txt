@@ -1,0 +1,15 @@
+○ helios-archive.service - Archivage de la telemetrie Helios
+     Loaded: loaded (/etc/systemd/system/helios-archive.service; static)
+     Active: inactive (dead) since Mon 2026-11-02 18:32:44 CET; 24ms ago
+TriggeredBy: ● helios-archive.timer
+    Process: 5883 ExecStart=/usr/local/sbin/helios-archive.sh (code=exited, status=0/SUCCESS)
+   Main PID: 5883 (code=exited, status=0/SUCCESS)
+        CPU: 95ms
+
+nov. 02 18:32:44 srv-core.codemax.lan systemd[1]: Starting Archivage de la telemetrie Helios...
+nov. 02 18:32:44 srv-core.codemax.lan helios-archive[5885]: demarrage
+nov. 02 18:32:44 srv-core.codemax.lan helios-archive[5895]: archive /var/lib/helios/archives/telemetry-20261102-183244.csv.gz (2 lignes)
+nov. 02 18:32:44 srv-core.codemax.lan helios-archive[5899]: purge : 0 archive(s) supprimee(s)
+nov. 02 18:32:44 srv-core.codemax.lan helios-archive[5901]: fin d execution rc=0
+nov. 02 18:32:44 srv-core.codemax.lan systemd[1]: helios-archive.service: Deactivated successfully.
+nov. 02 18:32:44 srv-core.codemax.lan systemd[1]: Finished Archivage de la telemetrie Helios.

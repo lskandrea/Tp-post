@@ -1,0 +1,5 @@
+Echeance=2026-11-02 20:31:36
+Timer arrete avant echeance puis reactive apres.
+nov. 02 20:31:40 srv-core.codemax.lan helios-timer-observation[2421]: rattrapage-observe
+Result=success
+ExecMainStatus=0

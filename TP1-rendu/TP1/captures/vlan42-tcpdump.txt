@@ -1,0 +1,17 @@
+dropped privs to tcpdump
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on bond0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+19:35:12.703328 08:00:27:4d:a7:19 > 08:00:27:4b:0d:07, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.10 > 10.42.42.11: ICMP echo request, id 5, seq 1, length 64
+19:35:12.704315 08:00:27:4b:0d:07 > 08:00:27:4d:a7:19, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.11 > 10.42.42.10: ICMP echo reply, id 5, seq 1, length 64
+19:35:13.844433 08:00:27:4d:a7:19 > 08:00:27:4b:0d:07, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.10 > 10.42.42.11: ICMP echo request, id 5, seq 2, length 64
+19:35:13.922712 08:00:27:4b:0d:07 > 08:00:27:4d:a7:19, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.11 > 10.42.42.10: ICMP echo reply, id 5, seq 2, length 64
+19:35:14.850754 08:00:27:4d:a7:19 > 08:00:27:4b:0d:07, ethertype 802.1Q (0x8100), length 102: vlan 42, p 0, ethertype IPv4 (0x0800), 10.42.42.10 > 10.42.42.11: ICMP echo request, id 5, seq 3, length 64
+5 packets captured
+6 packets received by filter
+0 packets dropped by kernel
+64 octets de 10.42.42.11 : icmp_seq=4 ttl=64 temps=1.10 ms
+64 octets de 10.42.42.11 : icmp_seq=5 ttl=64 temps=1.56 ms
+
+--- statistiques ping 10.42.42.11 ---
+5 paquets transmis, 5 reçus, 0% packet loss, time 4152ms
+rtt min/avg/max/mdev = 1.003/16.617/78.326/30.855 ms
