@@ -1,0 +1,14 @@
+=== CODE 1 : ligne invalide dans un espace de montage isole ===
+Ligne invalide rc=1 (attendu 1)
+=== CODE 3 : telemetrie illisible dans un espace isole ===
+Telemetrie illisible rc=3 (attendu 3)
+=== ATOMICITE : lectures pendant 20 publications ===
+Lectures JSON valides sans fichier partiel : 218069
+=== UNITS VERIFIEES ===
+=== ETAT FINAL ===
+{"genere": "2026-11-05T00:46:20.261879+00:00", "hote": "srv-core.codemax.lan", "derniere_mesure": "2026-11-05T01:46:15+01:00", "charge_1min": 0.09, "mem_dispo_ko": 1368304, "mesures": 9688}
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+ValueError: Telemetrie vide ou ligne invalide
+
+CODE_RETOUR=0

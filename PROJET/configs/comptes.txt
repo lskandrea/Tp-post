@@ -1,0 +1,10 @@
+lea:x:5104:5003:Lea Fabre - responsable suivi des tournees:/home/lea:/bin/bash
+helios-suivi:x:993:5003::/srv/helios/suivi:/sbin/nologin
+suivi:x:5003:
+Last password change					: nov. 05, 2026
+Password expires					: févr. 03, 2027
+Password inactive					: févr. 10, 2027
+Account expires						: never
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14
