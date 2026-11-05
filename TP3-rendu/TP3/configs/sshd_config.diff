@@ -1,0 +1,11 @@
+--- /root/TP3/avant/sshd_config-avant-dropin	2026-05-20 02:48:40.000000000 +0200
++++ /etc/ssh/sshd_config	2026-11-04 13:46:37.680542031 +0100
+@@ -120,7 +120,7 @@
+ #Banner none
+ 
+ # override default of no subsystems
+-Subsystem	sftp	/usr/libexec/openssh/sftp-server
++# Remplace dans 10-helios-hardening.conf: Subsystem	sftp	/usr/libexec/openssh/sftp-server
+ 
+ # Example of overriding settings on a per-user basis
+ #Match User anoncvs

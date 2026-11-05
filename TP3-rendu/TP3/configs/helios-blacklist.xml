@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ipset type="hash:ip">
+  <option name="family" value="inet"/>
+  <option name="hashsize" value="4096"/>
+  <option name="maxelem" value="65536"/>
+</ipset>

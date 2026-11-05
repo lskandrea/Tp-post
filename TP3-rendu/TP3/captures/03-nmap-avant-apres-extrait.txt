@@ -1,0 +1,13 @@
+SCANS ENREGISTRES DEPUIS SRV-EDGE
+AVANT:
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    filtered http
+2242/tcp  filtered foliocorp
+10051/tcp filtered zabbix-trapper
+APRES:
+PORT      STATE    SERVICE
+22/tcp    filtered ssh
+80/tcp    filtered http
+2242/tcp  open     foliocorp
+10051/tcp filtered zabbix-trapper

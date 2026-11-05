@@ -1,0 +1,9 @@
+=== INSTALLATION DE LA DETECTION ===
+=== CODE NOMINAL ===
+rc=0
+=== VERROU FLOcK ===
+Instance concurrente rc=2
+Le timer sera demarre apres les tests de blocage et le deblocage de srv-edge.
+Nov 04 13:49:01 srv-core.codemax.lan helios-watch-auth[5279]: Controle termine nouveaux_blocages=0 fenetre=10min
+Nov 04 13:49:02 srv-core.codemax.lan helios-watch-auth[5286]: Une instance est deja en cours (rc=2).
+Created symlink /etc/systemd/system/timers.target.wants/helios-watch-auth.timer -> /etc/systemd/system/helios-watch-auth.timer.

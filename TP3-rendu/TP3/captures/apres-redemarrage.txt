@@ -1,0 +1,18 @@
+srv-core.codemax.lan
+ 13:54:51 up 0 min,  0 users,  load average: 3,59, 1,15, 0,40
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+ -1 5b45d0cd6d384221a9d6e450e0183ce1 Wed 2026-11-04 13:17:15 CET Wed 2026-11-04 13:53:51 CET
+  0 a39abcc9b3224674ac57f23c36c09570 Wed 2026-11-04 13:54:06 CET Wed 2026-11-04 13:54:51 CET
+enabled 1
+failure 1
+pid 603
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+active
+active
+active

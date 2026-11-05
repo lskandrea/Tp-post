@@ -1,0 +1,2 @@
+srv-core.codemax.lan
+uid=1000(sysops) gid=1000(sysops) groupes=1000(sysops),10(wheel),993(ssh-admins) contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023

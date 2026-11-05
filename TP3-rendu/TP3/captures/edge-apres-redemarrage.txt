@@ -1,0 +1,6 @@
+srv-core.codemax.lan
+sysops wheel ssh-admins
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+
+rc=0

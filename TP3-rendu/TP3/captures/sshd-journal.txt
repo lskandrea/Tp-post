@@ -1,0 +1,211 @@
+Nov 04 13:17:33 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:17:34 srv-core.codemax.lan sshd[747]: Server listening on 0.0.0.0 port 22.
+Nov 04 13:17:34 srv-core.codemax.lan sshd[747]: Server listening on :: port 22.
+Nov 04 13:17:34 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.
+Nov 04 13:17:36 srv-core.codemax.lan sshd-session[1084]: Connection closed by 10.0.2.2 port 44917 [preauth]
+Nov 04 13:17:43 srv-core.codemax.lan sshd-session[2037]: Accepted publickey for sysops from 10.0.2.2 port 44922 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2037]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2037]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2094]: Accepted publickey for sysops from 192.168.56.1 port 44924 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2094]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2094]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:17:47 srv-core.codemax.lan sshd-session[2130]: Connection closed by 10.0.2.2 port 44919 [preauth]
+Nov 04 13:26:52 srv-core.codemax.lan sshd-session[2663]: Accepted publickey for sysops from 192.168.56.1 port 62190 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:26:52 srv-core.codemax.lan sshd-session[2663]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:26:53 srv-core.codemax.lan sshd-session[2663]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:28:04 srv-core.codemax.lan sshd-session[2758]: Accepted publickey for sysops from 192.168.56.1 port 23438 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:04 srv-core.codemax.lan sshd-session[2758]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:28:07 srv-core.codemax.lan sshd-session[2899]: Connection closed by authenticating user sysops 192.168.56.11 port 51702 [preauth]
+Nov 04 13:28:53 srv-core.codemax.lan sshd-session[2937]: Accepted publickey for sysops from 192.168.56.1 port 46998 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:53 srv-core.codemax.lan sshd-session[2937]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:28:55 srv-core.codemax.lan sshd-session[3058]: Accepted publickey for sysops from 192.168.56.11 port 39228 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:28:55 srv-core.codemax.lan sshd-session[3058]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:28:55 srv-core.codemax.lan sshd-session[3058]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:28:56 srv-core.codemax.lan sshd-session[3089]: Accepted publickey for sysops from 192.168.56.1 port 47003 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:56 srv-core.codemax.lan sshd-session[3089]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:29:24 srv-core.codemax.lan sshd-session[3384]: Connection closed by 192.168.56.11 port 35122
+Nov 04 13:29:24 srv-core.codemax.lan sshd-session[3385]: Connection closed by 192.168.56.11 port 35128
+Nov 04 13:29:24 srv-core.codemax.lan sshd-session[3386]: Connection closed by 192.168.56.11 port 35136
+Nov 04 13:29:24 srv-core.codemax.lan sshd-session[3387]: Connection closed by 192.168.56.11 port 35148
+Nov 04 13:31:04 srv-core.codemax.lan sshd-session[3469]: Accepted publickey for sysops from 192.168.56.1 port 26220 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:31:04 srv-core.codemax.lan sshd-session[3469]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:32:32 srv-core.codemax.lan sshd-session[3710]: Accepted publickey for sysops from 192.168.56.1 port 57647 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:32:32 srv-core.codemax.lan sshd-session[3710]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:37:38 srv-core.codemax.lan sshd-session[4125]: Accepted publickey for sysops from 192.168.56.1 port 62020 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:37:38 srv-core.codemax.lan sshd-session[4125]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:37:39 srv-core.codemax.lan sshd-session[4125]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:40:08 srv-core.codemax.lan sshd-session[4313]: Accepted publickey for sysops from 192.168.56.1 port 2457 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:40:08 srv-core.codemax.lan sshd-session[4313]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:40:09 srv-core.codemax.lan sshd-session[4313]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:42:51 srv-core.codemax.lan sshd-session[4521]: Accepted publickey for sysops from 192.168.56.1 port 54153 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:42:52 srv-core.codemax.lan sshd-session[4521]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:42:57 srv-core.codemax.lan sshd-session[4697]: Accepted publickey for sysops from 192.168.56.1 port 54158 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:42:57 srv-core.codemax.lan sshd-session[4697]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:42:58 srv-core.codemax.lan sshd-session[4697]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:46:36 srv-core.codemax.lan sshd-session[4933]: Accepted publickey for sysops from 192.168.56.1 port 41636 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:46:36 srv-core.codemax.lan sshd-session[4933]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:46:37 srv-core.codemax.lan sshd[747]: Received signal 15; terminating.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Stopping OpenSSH server daemon...
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: sshd.service: Deactivated successfully.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Stopped OpenSSH server daemon.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:46:37 srv-core.codemax.lan sshd[5006]: Server listening on 0.0.0.0 port 22.
+Nov 04 13:46:37 srv-core.codemax.lan sshd[5006]: Server listening on :: port 22.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5006]: Received signal 15; terminating.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Stopping OpenSSH server daemon...
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: sshd.service: Deactivated successfully.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Stopped OpenSSH server daemon.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5037]: Server listening on 10.42.0.10 port 2242.
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5037]: Server listening on 192.168.56.10 port 2242.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.
+Nov 04 13:47:07 srv-core.codemax.lan sshd-session[5061]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:47:07 srv-core.codemax.lan sshd-session[5061]: Connection from 192.168.56.11 port 53778 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Postponed publickey for sysops from 192.168.56.11 port 53778 ssh2 [preauth]
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted publickey for sysops from 192.168.56.11 port 53778 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: User child is on pid 5064
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:47:19 srv-core.codemax.lan sshd-session[5100]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:47:19 srv-core.codemax.lan sshd-session[5100]: Connection from 192.168.56.11 port 47638 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:47:19 srv-core.codemax.lan sshd-session[5100]: User root from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+Nov 04 13:47:19 srv-core.codemax.lan sshd-session[5100]: Connection closed by invalid user root 192.168.56.11 port 47638 [preauth]
+Nov 04 13:47:19 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:47:30 srv-core.codemax.lan sshd-session[5110]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:47:30 srv-core.codemax.lan sshd-session[5110]: Connection from 192.168.56.11 port 46180 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:47:30 srv-core.codemax.lan sshd-session[5110]: Connection closed by authenticating user sysops 192.168.56.11 port 46180 [preauth]
+Nov 04 13:47:30 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:47:41 srv-core.codemax.lan sshd-session[5120]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:47:41 srv-core.codemax.lan sshd-session[5120]: Connection from 192.168.56.11 port 37132 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:47:41 srv-core.codemax.lan sshd-session[5120]: User nadia from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+Nov 04 13:47:41 srv-core.codemax.lan sshd-session[5120]: Connection closed by invalid user nadia 192.168.56.11 port 37132 [preauth]
+Nov 04 13:47:41 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:47:52 srv-core.codemax.lan sshd-session[5132]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:47:52 srv-core.codemax.lan sshd-session[5132]: Connection from 192.168.56.11 port 40268 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Postponed publickey for sysops from 192.168.56.11 port 40268 ssh2 [preauth]
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted publickey for sysops from 192.168.56.11 port 40268 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: User child is on pid 5135
+Nov 04 13:48:12 srv-core.codemax.lan sshd-session[5152]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:48:12 srv-core.codemax.lan sshd-session[5152]: Connection from 192.168.56.11 port 36240 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:48:13 srv-core.codemax.lan sshd-session[5152]: Unable to negotiate with 192.168.56.11 port 36240: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,ext-info-c,kex-strict-c-v00@openssh.com [preauth]
+Nov 04 13:48:13 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Connection from 192.168.56.1 port 35162 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted publickey for sysops from 192.168.56.1 port 35162 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: User child is on pid 5193
+Nov 04 13:49:07 srv-core.codemax.lan sshd-session[5323]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:49:07 srv-core.codemax.lan sshd-session[5323]: Connection from 192.168.56.11 port 57735 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:49:08 srv-core.codemax.lan sshd-session[5323]: Invalid user pirate from 192.168.56.11 port 57735
+Nov 04 13:49:08 srv-core.codemax.lan sshd-session[5323]: Connection closed by invalid user pirate 192.168.56.11 port 57735 [preauth]
+Nov 04 13:49:08 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: Connection from 192.168.56.11 port 53343 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: Invalid user pirate from 192.168.56.11 port 53343
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: Connection closed by invalid user pirate 192.168.56.11 port 53343 [preauth]
+Nov 04 13:49:19 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: Connection from 192.168.56.11 port 39205 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: Invalid user pirate from 192.168.56.11 port 39205
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: Connection closed by invalid user pirate 192.168.56.11 port 39205 [preauth]
+Nov 04 13:49:30 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: Connection from 192.168.56.11 port 48745 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: Invalid user pirate from 192.168.56.11 port 48745
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: Connection closed by invalid user pirate 192.168.56.11 port 48745 [preauth]
+Nov 04 13:49:41 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: Connection from 192.168.56.11 port 34699 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: Invalid user pirate from 192.168.56.11 port 34699
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: Connection closed by invalid user pirate 192.168.56.11 port 34699 [preauth]
+Nov 04 13:49:52 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: Connection from 192.168.56.11 port 47117 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: Invalid user pirate from 192.168.56.11 port 47117
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: Connection closed by invalid user pirate 192.168.56.11 port 47117 [preauth]
+Nov 04 13:50:03 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: Connection from 192.168.56.11 port 50953 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: Invalid user pirate from 192.168.56.11 port 50953
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: Connection closed by invalid user pirate 192.168.56.11 port 50953 [preauth]
+Nov 04 13:50:14 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: Connection from 192.168.56.11 port 44071 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: Invalid user pirate from 192.168.56.11 port 44071
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: Connection closed by invalid user pirate 192.168.56.11 port 44071 [preauth]
+Nov 04 13:50:26 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: Connection from 192.168.56.11 port 57079 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: Invalid user pirate from 192.168.56.11 port 57079
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: Connection closed by invalid user pirate 192.168.56.11 port 57079 [preauth]
+Nov 04 13:50:37 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: Connection from 192.168.56.11 port 33081 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: Invalid user pirate from 192.168.56.11 port 33081
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: Connection closed by invalid user pirate 192.168.56.11 port 33081 [preauth]
+Nov 04 13:50:48 srv-core.codemax.lan sshd[5037]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5423]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5423]: Connection from 192.168.56.1 port 44383 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted publickey for sysops from 192.168.56.1 port 44383 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: User child is on pid 5426
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Connection from 192.168.56.1 port 33401 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted publickey for sysops from 192.168.56.1 port 33401 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: User child is on pid 5677
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Connection from 192.168.56.1 port 33411 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted publickey for sysops from 192.168.56.1 port 33411 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: User child is on pid 5864
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:53:50 srv-core.codemax.lan systemd[1]: Stopping OpenSSH server daemon...
+Nov 04 13:53:50 srv-core.codemax.lan systemd[1]: sshd.service: Deactivated successfully.
+Nov 04 13:53:50 srv-core.codemax.lan systemd[1]: Stopped OpenSSH server daemon.
+-- Boot a39abcc9b3224674ac57f23c36c09570 --
+Nov 04 13:54:30 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:54:36 srv-core.codemax.lan sshd[1322]: Server listening on 10.42.0.10 port 2242.
+Nov 04 13:54:36 srv-core.codemax.lan sshd[1322]: Server listening on 192.168.56.10 port 2242.
+Nov 04 13:54:36 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Connection from 192.168.56.1 port 33451 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted publickey for sysops from 192.168.56.1 port 33451 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: User child is on pid 2111
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Connection from 192.168.56.1 port 37463 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted publickey for sysops from 192.168.56.1 port 37463 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:54:59 srv-core.codemax.lan sshd-session[2233]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:54:59 srv-core.codemax.lan sshd-session[2233]: User child is on pid 2236
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: Connection from 192.168.56.1 port 12814 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: Accepted publickey for sysops from 192.168.56.1 port 12814 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:59:01 srv-core.codemax.lan sshd-session[2525]: User child is on pid 2528
+Nov 04 13:59:02 srv-core.codemax.lan sshd-session[2525]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: Connection from 192.168.56.1 port 34497 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: Accepted publickey for sysops from 192.168.56.1 port 34497 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 14:01:12 srv-core.codemax.lan sshd-session[2680]: User child is on pid 2683
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: main: SHA1 in signatures is disabled for RSA keys
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: Connection from 192.168.56.1 port 34504 on 192.168.56.10 port 2242 rdomain ""
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: Accepted publickey for sysops from 192.168.56.1 port 34504 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 14:01:24 srv-core.codemax.lan sshd-session[2844]: User child is on pid 2847

@@ -1,0 +1,199 @@
+=== JOURNAL PERSISTANT ===
+drwxr-xr-x. 2 root root 4096 Nov  4 13:31 /var/log/journal/f3d41de90cb7466fb316548e4059c986
+Archived and active journals take up 16.0M in the file system.
+=== AUDITD ===
+/sbin/augenrules: No change
+No rules
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 4
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 4
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+-w /etc/passwd -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/gshadow -p wa -k identity
+-w /etc/sudoers -p wa -k sudoers
+-w /etc/sudoers.d -p wa -k sudoers
+-w /etc/ssh/sshd_config -p wa -k sshd-config
+-w /etc/ssh/sshd_config.d -p wa -k sshd-config
+-w /usr/local/bin/helios-lastlog -p x -k helios-setgid
+-a always,exit -F arch=b64 -S execve -F euid=0 -F auid>=1000 -F auid!=-1 -F key=privesc
+-a always,exit -F arch=b32 -S execve -F euid=0 -F auid>=1000 -F auid!=-1 -F key=privesc
+-w /etc/firewalld -p wa -k firewall
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+=== EVENEMENTS PROVOQUES ===
+=== RECHERCHES ===
+type=PROCTITLE msg=audit(11/04/26 13:42:53.720:876) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.720:876) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.720:876) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd31f729e0 a2=0x438 a3=0x0 items=0 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.720:876) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.739:889) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:42:53.739:889) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.739:889) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.739:889) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.739:889) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd31f74e80 a2=0x434 a3=0x0 items=1 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.739:889) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.745:890) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:42:53.745:890) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.745:890) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.745:890) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.745:890) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd31f74e80 a2=0x438 a3=0x0 items=1 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.745:890) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.789:901) : proctitle=touch /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:42:53.789:901) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:53.789:901) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.789:901) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:42:53.789:901) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7fff1f752e93 a2=O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK a3=0x1b6 items=2 ppid=4580 pid=4650 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=touch exe=/usr/bin/touch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.797:903) : proctitle=rm -f /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:42:53.797:903) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:53.797:903) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.797:903) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:42:53.797:903) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x563bf732a380 a2=0x0 a3=0x100 items=2 ppid=4580 pid=4651 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=rm exe=/usr/bin/rm subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+type=SYSCALL msg=audit(11/04/26 13:32:35.033:658) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55e4bc359250 a1=0x55e4bc343640 a2=0x55e4bc34c0c0 a3=0x1b6 items=2 ppid=3848 pid=3877 auid=sysops uid=julien gid=transport euid=julien suid=julien fsuid=julien egid=telemetry sgid=telemetry fsgid=telemetry tty=(none) ses=12 comm=helios-lastlog exe=/usr/local/bin/helios-lastlog subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=helios-setgid 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.720:879) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.720:879) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.720:879) : arch=x86_64 syscall=sendto success=yes exit=1100 a0=0x3 a1=0x7ffd31f729e0 a2=0x44c a3=0x0 items=0 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.720:879) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=helios-setgid list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.750:893) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:42:53.750:893) : item=0 name=/usr/local/bin/ inode=400784 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.750:893) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.750:893) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.750:893) : arch=x86_64 syscall=sendto success=yes exit=1100 a0=0x3 a1=0x7ffd31f74e80 a2=0x44c a3=0x0 items=1 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.750:893) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=helios-setgid list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:54.126:912) : proctitle=/usr/local/bin/helios-lastlog 
+type=PATH msg=audit(11/04/26 13:42:54.126:912) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:54.126:912) : item=0 name=/usr/local/bin/helios-lastlog inode=405423 dev=08:01 mode=file,sgid,755 ouid=root ogid=telemetry rdev=00:00 obj=unconfined_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:54.126:912) : cwd=/home/julien 
+type=EXECVE msg=audit(11/04/26 13:42:54.126:912) : argc=1 a0=/usr/local/bin/helios-lastlog 
+type=SYSCALL msg=audit(11/04/26 13:42:54.126:912) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x558d4b0fe250 a1=0x558d4b0e8640 a2=0x558d4b0f10c0 a3=0x1b6 items=2 ppid=4653 pid=4682 auid=sysops uid=julien gid=transport euid=julien suid=julien fsuid=julien egid=telemetry sgid=telemetry fsgid=telemetry tty=(none) ses=15 comm=helios-lastlog exe=/usr/local/bin/helios-lastlog subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=helios-setgid 
+type=EXECVE msg=audit(11/04/26 13:42:57.152:917) : argc=8 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=sudoers a5=-i a6=--start a7=today 
+type=SYSCALL msg=audit(11/04/26 13:42:57.152:917) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55679f683db0 a1=0x55679f682b50 a2=0x55679f6823a0 a3=0x8 items=2 ppid=4580 pid=4688 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:57.172:918) : proctitle=tail -20 
+type=PATH msg=audit(11/04/26 13:42:57.172:918) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:57.172:918) : item=0 name=/bin/tail inode=408372 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:57.172:918) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:42:57.172:918) : argc=2 a0=tail a1=-20 
+type=SYSCALL msg=audit(11/04/26 13:42:57.172:918) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55679f67ee10 a1=0x55679f683bf0 a2=0x55679f6823a0 a3=0x8 items=2 ppid=4580 pid=4691 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:57.175:919) : proctitle=ausearch -if /var/log/audit/audit.log -k helios-setgid -i --start today 
+type=PATH msg=audit(11/04/26 13:42:57.175:919) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:57.175:919) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:57.175:919) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:42:57.175:919) : argc=8 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=helios-setgid a5=-i a6=--start a7=today 
+type=SYSCALL msg=audit(11/04/26 13:42:57.175:919) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55679f683e00 a1=0x55679f682b50 a2=0x55679f6823a0 a3=0x8 items=2 ppid=4580 pid=4690 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:57.200:920) : proctitle=tail -30 
+type=PATH msg=audit(11/04/26 13:42:57.200:920) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:57.200:920) : item=0 name=/bin/tail inode=408372 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:57.200:920) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:42:57.200:920) : argc=2 a0=tail a1=-30 
+type=SYSCALL msg=audit(11/04/26 13:42:57.200:920) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55679f67ee10 a1=0x55679f683bf0 a2=0x55679f6823a0 a3=0x8 items=2 ppid=4580 pid=4693 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:57.203:921) : proctitle=ausearch -if /var/log/audit/audit.log -k privesc -i --start today 
+type=PATH msg=audit(11/04/26 13:42:57.203:921) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:57.203:921) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:57.203:921) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:42:57.203:921) : argc=8 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=privesc a5=-i a6=--start a7=today 
+type=SYSCALL msg=audit(11/04/26 13:42:57.203:921) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55679f683e00 a1=0x55679f682b50 a2=0x55679f6823a0 a3=0x8 items=2 ppid=4580 pid=4692 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+
+Authentication Summary Report
+=============================
+total  acct
+=============================
+202  sysops
+31  julien
+28  nadia
+21  audit-ext
+8  tarek
+1  root
+
+Failed Summary Report
+======================
+Range of time in logs: 11/02/26 15:36:55.843 - 11/04/26 13:42:57.273
+Selected time for report: 11/02/26 15:36:55 - 11/04/26 13:42:57.273
+Number of changes in configuration: 0
+Number of changes to accounts, groups, or roles: 1
+Number of logins: 0
+Number of failed logins: 16
+Number of authentications: 0
+Number of failed authentications: 15
+Number of users: 6
+Number of terminals: 6
+Number of host names: 4
+Number of executables: 6
+Number of commands: 1
+Number of files: 0
+Number of AVC's: 0
+Number of MAC events: 0
+Number of failed syscalls: 0
+Number of anomaly events: 0
+Number of responses to anomaly events: 0
+Number of crypto events: 0
+Number of integrity events: 0
+Number of virt events: 0
+Number of keys: 0
+Number of process IDs: 88
+Number of events: 120
+
+
+Key Summary Report
+===========================
+total  key
+===========================
+130  privesc
+20  identity
+16  sudoers
+10  sshd-config
+8  helios-setgid
+5  firewall
+PASS: /var/log/journal/f3d41de90cb7466fb316548e4059c986/user-1000.journal
+PASS: /var/log/journal/f3d41de90cb7466fb316548e4059c986/system.journal
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower

@@ -1,0 +1,18 @@
+BLOCAGE TESTE - RESULTATS ENREGISTRES
+
+192.168.56.11
+192.168.56.11
+yes
+2026-11-04T13:50:52+01:00 192.168.56.11 10
+
+nov. 04 13:49:01 srv-core.codemax.lan helios-watch-auth[5279]: Controle termine
+nouveaux_blocages=0 fenetre=10min
+nov. 04 13:50:52 srv-core.codemax.lan helios-watch-auth[5478]: BLOCAGE
+source=192.168.56.11 echecs=10 fenetre=10min seuil=5
+nov. 04 13:50:52 srv-core.codemax.lan helios-watch-auth[5479]: Controle termine
+nouveaux_blocages=1 fenetre=10min
+nov. 04 13:50:55 srv-core.codemax.lan helios-watch-auth[5499]: Controle termine
+nouveaux_blocages=0 fenetre=10min
+Connexion avec blacklist rc=1
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: TIMEOUT.

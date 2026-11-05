@@ -1,0 +1,305 @@
+=== REQUETE1 AVERTISSEMENTS SSH DEPUIS2H ===
+-- No entries --
+=== REQUETE2 ECHECS ET REUSSITES SSH ===
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted publickey for sysops from 192.168.56.11 port 40268 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted publickey for sysops from 192.168.56.1 port 35162 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:49:08 srv-core.codemax.lan sshd-session[5323]: Invalid user pirate from 192.168.56.11 port 57735
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: Invalid user pirate from 192.168.56.11 port 53343
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: Invalid user pirate from 192.168.56.11 port 39205
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: Invalid user pirate from 192.168.56.11 port 48745
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: Invalid user pirate from 192.168.56.11 port 34699
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: Invalid user pirate from 192.168.56.11 port 47117
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: Invalid user pirate from 192.168.56.11 port 50953
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: Invalid user pirate from 192.168.56.11 port 44071
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: Invalid user pirate from 192.168.56.11 port 57079
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: Invalid user pirate from 192.168.56.11 port 33081
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted publickey for sysops from 192.168.56.1 port 44383 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted publickey for sysops from 192.168.56.1 port 33401 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted publickey for sysops from 192.168.56.1 port 33411 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+-- Boot a39abcc9b3224674ac57f23c36c09570 --
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted publickey for sysops from 192.168.56.1 port 33451 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted publickey for sysops from 192.168.56.1 port 37463 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+=== REQUETE3 AUTHPRIV AUJOURDHUI ===
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-investigation.sh" bytes read 0 written 1589
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: mkdir name "/tmp/helios-tp3-annexes" mode 0777
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: sent status Failure
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/05-helios-crypto.conf" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/05-helios-crypto.conf" bytes read 0 written 271
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/10-helios-hardening.conf" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/10-helios-hardening.conf" bytes read 0 written 877
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/50-helios.conf" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/50-helios.conf" bytes read 0 written 213
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/90-helios.rules" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/90-helios.rules" bytes read 0 written 733
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/issue.net" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/issue.net" bytes read 0 written 95
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: open "/tmp/helios-tp3-annexes/LISEZMOI.md" flags WRITE,CREATE,TRUNCATE mode 0666
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: close "/tmp/helios-tp3-annexes/LISEZMOI.md" bytes read 0 written 1105
+Nov 04 13:54:59 srv-core.codemax.lan internal-sftp[2237]: session closed for local user sysops from [192.168.56.1]
+Nov 04 13:54:59 srv-core.codemax.lan sshd-session[2236]: Close session: user sysops from 192.168.56.1 port 37463 id 0
+Nov 04 13:54:59 srv-core.codemax.lan sshd-session[2236]: Starting session: command for sysops from 192.168.56.1 port 37463 id 1
+Nov 04 13:54:59 srv-core.codemax.lan sudo[2238]:   sysops : PWD=/home/sysops ; USER=root ; COMMAND=/bin/bash -c '/bin/bash /tmp/helios-tp3-investigation.sh'
+Nov 04 13:54:59 srv-core.codemax.lan sudo[2238]: pam_unix(sudo:session): session opened for user root(uid=0) by sysops(uid=1000)
+=== REQUETE4 ACTIVITE UID5101 ===
+-- No entries --
+=== REQUETE5 SUDO JSON ===
+{
+	"_AUDIT_LOGINUID" : "1000",
+	"_CMDLINE" : "sudo -S -p \"\" /bin/bash -c \"nmcli con add type ethernet ifname enp0s8 con-name admin ipv4.method manual ipv4.addresses 192.168.56.10/24 ipv4.never-default yes ipv6.method disabled; nmcli con up admin; ip -br addr\"",
+	"SYSLOG_TIMESTAMP" : "Nov  4 13:17:44 ",
+	"_SYSTEMD_UNIT" : "session-1.scope",
+	"_COMM" : "sudo",
+	"_BOOT_ID" : "5b45d0cd6d384221a9d6e450e0183ce1",
+	"__MONOTONIC_TIMESTAMP" : "29726385",
+	"_SYSTEMD_OWNER_UID" : "1000",
+	"_PID" : "2049",
+	"MESSAGE" : "  sysops : PWD=/home/sysops ; USER=root ; COMMAND=/bin/bash -c 'nmcli con add type ethernet ifname enp0s8 con-name admin ipv4.method manual ipv4.addresses 192.168.56.10/24 ipv4.never-default yes ipv6.method disabled; nmcli con up admin; ip -br addr'",
+	"_RUNTIME_SCOPE" : "system",
+	"_SYSTEMD_SLICE" : "user-1000.slice",
+	"PRIORITY" : "5",
+	"_SELINUX_CONTEXT" : "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023",
+	"_SYSTEMD_USER_SLICE" : "-.slice",
+	"_GID" : "1000",
+	"_TRANSPORT" : "syslog",
+	"_MACHINE_ID" : "f3d41de90cb7466fb316548e4059c986",
+	"_SOURCE_REALTIME_TIMESTAMP" : "1793794664316741",
+	"_SYSTEMD_CGROUP" : "/user.slice/user-1000.slice/session-1.scope",
+	"__REALTIME_TIMESTAMP" : "1793794664316756",
+	"SYSLOG_IDENTIFIER" : "sudo",
+	"_SYSTEMD_SESSION" : "1",
+	"__CURSOR" : "s=6cf42d6410874d06aca49a96f7c02e20;i=46a;b=5b45d0cd6d384221a9d6e450e0183ce1;m=1c596b1;t=65f725dc43f54;x=5ad9283c820e0562",
+	"_UID" : "1000",
+	"_EXE" : "/usr/bin/sudo",
+	"_AUDIT_SESSION" : "1",
+	"_SYSTEMD_INVOCATION_ID" : "b47f0f97ce644eb686afaac2906494f8",
+	"_CAP_EFFECTIVE" : "1ffffffffff",
+	"SYSLOG_FACILITY" : "10",
+	"_HOSTNAME" : "srv-core.codemax.lan"
+}
+{
+	"__REALTIME_TIMESTAMP" : "1793794664320720",
+	"_SYSTEMD_INVOCATION_ID" : "b47f0f97ce644eb686afaac2906494f8",
+	"_HOSTNAME" : "srv-core.codemax.lan",
+	"MESSAGE" : "pam_unix(sudo:session): session opened for user root(uid=0) by sysops(uid=1000)",
+	"_RUNTIME_SCOPE" : "system",
+	"_AUDIT_SESSION" : "1",
+	"_SELINUX_CONTEXT" : "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023",
+	"SYSLOG_IDENTIFIER" : "sudo",
+	"_SYSTEMD_SESSION" : "1",
+	"SYSLOG_FACILITY" : "10",
+	"_MACHINE_ID" : "f3d41de90cb7466fb316548e4059c986",
+	"_EXE" : "/usr/bin/sudo",
+	"_GID" : "0",
+	"_CAP_EFFECTIVE" : "1ffffffffff",
+	"_BOOT_ID" : "5b45d0cd6d384221a9d6e450e0183ce1",
+	"_SYSTEMD_UNIT" : "session-1.scope",
+	"_AUDIT_LOGINUID" : "1000",
+	"_SYSTEMD_OWNER_UID" : "1000",
+	"PRIORITY" : "6",
+	"_UID" : "1000",
+	"_COMM" : "sudo",
+	"__MONOTONIC_TIMESTAMP" : "29730349",
+	"__CURSOR" : "s=6cf42d6410874d06aca49a96f7c02e20;i=46b;b=5b45d0cd6d384221a9d6e450e0183ce1;m=1c5a62d;t=65f725dc44ed0;x=350399bb946865f9",
+	"SYSLOG_TIMESTAMP" : "Nov  4 13:17:44 ",
+	"_TRANSPORT" : "syslog",
+	"_SYSTEMD_CGROUP" : "/user.slice/user-1000.slice/session-1.scope",
+	"_SYSTEMD_USER_SLICE" : "-.slice",
+	"_PID" : "2049",
+	"_CMDLINE" : "sudo -S -p \"\" /bin/bash -c \"nmcli con add type ethernet ifname enp0s8 con-name admin ipv4.method manual ipv4.addresses 192.168.56.10/24 ipv4.never-default yes ipv6.method disabled; nmcli con up admin; ip -br addr\"",
+	"_SOURCE_REALTIME_TIMESTAMP" : "1793794664320699",
+	"_SYSTEMD_SLICE" : "user-1000.slice"
+}
+=== JOURNAL DU DEMARRAGE PRECEDENT ===
+Nov 04 13:17:15 srv-core.codemax.lan kernel: Warning: Unmaintained driver is detected: e1000
+Nov 04 13:17:15 srv-core.codemax.lan kernel: Warning: Unmaintained driver is detected: e1000
+Nov 04 13:17:15 srv-core.codemax.lan kernel: Warning: Unmaintained driver is detected: e1000
+Nov 04 13:17:16 srv-core.codemax.lan kernel: Warning: Unmaintained driver is detected: e1000
+Nov 04 13:17:16 srv-core.codemax.lan kernel: Warning: Unmaintained driver is detected: e1000_init_module
+Nov 04 13:29:01 srv-core.codemax.lan kernel: bond0: option arp_missed_max: invalid value (0)
+Nov 04 13:29:01 srv-core.codemax.lan kernel: bond0: option arp_missed_max: allowed values 1 - 255
+Nov 04 13:29:01 srv-core.codemax.lan NetworkManager[708]: <error> [1793795341.1875] platform-linux: sysctl: failed to set 'bonding/arp_missed_max' to '0': (22) Argument invalide
+Nov 04 13:53:51 srv-core.codemax.lan dbus-broker-launch[652]: Activation request for 'org.freedesktop.nm_dispatcher' failed.
+Nov 04 13:53:51 srv-core.codemax.lan dbus-broker-launch[652]: Activation request for 'org.freedesktop.nm_dispatcher' failed.
+=== MARQUEUR PERSISTANT ===
+Nov 04 13:53:42 srv-core.codemax.lan tp3-persistence[5846]: TP3_AVANT_REDEMARRAGE: verification journaux persistants
+=== DEMARRAGES ===
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+ -1 5b45d0cd6d384221a9d6e450e0183ce1 Wed 2026-11-04 13:17:15 CET Wed 2026-11-04 13:53:51 CET
+  0 a39abcc9b3224674ac57f23c36c09570 Wed 2026-11-04 13:54:06 CET Wed 2026-11-04 13:55:00 CET
+=== CONNEXIONS ===
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:50 - 13:50  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:50 - 13:50  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:50 - 13:50  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:50 - 13:50  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:50 - 13:50  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:49 - 13:49  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:49 - 13:49  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:49 - 13:49  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:49 - 13:49  (00:00)
+pirate   ssh:notty    192.168.56.11    Wed Nov  4 13:49 - 13:49  (00:00)
+sysops   tty1                          Wed Nov  4 06:43 - 06:43  (00:00)
+sysops   tty1                          Wed Nov  4 06:42 - 06:42  (00:00)
+nadia                                  Tue Nov  3 04:57 - 04:57  (00:00)
+nadia                                  Tue Nov  3 04:57 - 04:57  (00:00)
+nadia                                  Tue Nov  3 04:57 - 04:57  (00:00)
+
+btmp begins Tue Nov  3 04:57:38 2026
+sysops   tty1                          Wed Nov  4 13:54:53 2026   still logged in
+reboot   system boot  5.14.0-687.10.1. Wed Nov  4 13:54:20 2026   still running
+sysops   tty1                          Wed Nov  4 13:19:36 2026 - down                      (00:34)
+reboot   system boot  5.14.0-687.10.1. Wed Nov  4 13:17:27 2026 - Wed Nov  4 13:53:51 2026  (00:36)
+sysops   tty1                          Wed Nov  4 06:46:40 2026 - down                      (01:58)
+nadia    pts/0        10.0.2.2         Tue Nov  3 05:10:50 2026 - Tue Nov  3 05:10:51 2026  (00:00)
+tarek    pts/0        10.0.2.2         Tue Nov  3 05:10:50 2026 - Tue Nov  3 05:10:50 2026  (00:00)
+audit-ex pts/0        10.0.2.2         Tue Nov  3 05:10:49 2026 - Tue Nov  3 05:10:49 2026  (00:00)
+nadia    pts/0        10.0.2.2         Tue Nov  3 05:10:48 2026 - Tue Nov  3 05:10:49 2026  (00:00)
+julien   pts/0        10.0.2.2         Tue Nov  3 05:10:48 2026 - Tue Nov  3 05:10:48 2026  (00:00)
+
+wtmp begins Mon Nov  2 15:36:52 2026
+USER       PWD-CHANGE   PWD-EXPIR  LAST-LOGIN FAILED-LOGIN
+root       1969-Dec31             Nov02/16:15 
+sysops     1969-Dec31                   13:54 06:43
+julien    Nov02/01:00             Nov03/05:10 
+nadia     Nov03/01:00             Nov03/05:10 Nov03/04:57
+tarek     Nov03/01:00             Nov03/05:10 
+audit-ext Nov03/01:00 Nov24/01:00 Nov03/05:10 
+=== AUDIT APRES REDEMARRAGE ===
+enabled 1
+failure 1
+pid 603
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+-w /etc/passwd -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/gshadow -p wa -k identity
+-w /etc/sudoers -p wa -k sudoers
+-w /etc/sudoers.d -p wa -k sudoers
+-w /etc/ssh/sshd_config -p wa -k sshd-config
+-w /etc/ssh/sshd_config.d -p wa -k sshd-config
+-w /usr/local/bin/helios-lastlog -p x -k helios-setgid
+-a always,exit -F arch=b64 -S execve -F euid=0 -F auid>=1000 -F auid!=-1 -F key=privesc
+-a always,exit -F arch=b32 -S execve -F euid=0 -F auid>=1000 -F auid!=-1 -F key=privesc
+-w /etc/firewalld -p wa -k firewall
+type=PROCTITLE msg=audit(11/04/26 13:53:42.365:1600) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:53:42.365:1600) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:53:42.365:1600) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:53:42.365:1600) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:53:42.365:1600) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc7198f230 a2=0x438 a3=0x0 items=1 ppid=5794 pid=5814 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=22 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:53:42.365:1600) : auid=sysops ses=22 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:54:23.696:11) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:54:23.696:11) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:54:23.696:11) : cwd=/ 
+type=SOCKADDR msg=audit(11/04/26 13:54:23.696:11) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:54:23.696:11) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fff3de85b70 a2=0x434 a3=0x0 items=1 ppid=606 pid=633 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=system_u:system_r:unconfined_service_t:s0 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:54:23.696:11) : auid=unset ses=unset subj=system_u:system_r:unconfined_service_t:s0 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:54:23.696:12) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:54:23.696:12) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:54:23.696:12) : cwd=/ 
+type=SOCKADDR msg=audit(11/04/26 13:54:23.696:12) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:54:23.696:12) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7fff3de85b70 a2=0x438 a3=0x0 items=1 ppid=606 pid=633 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=system_u:system_r:unconfined_service_t:s0 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:54:23.696:12) : auid=unset ses=unset subj=system_u:system_r:unconfined_service_t:s0 op=add_rule key=sudoers list=exit res=yes 
+type=PROCTITLE msg=audit(11/04/26 13:55:00.573:243) : proctitle=ausearch -if /var/log/audit/audit.log -k sudoers -i --start today 
+type=PATH msg=audit(11/04/26 13:55:00.573:243) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:55:00.573:243) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:55:00.573:243) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:55:00.573:243) : argc=8 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=sudoers a5=-i a6=--start a7=today 
+type=SYSCALL msg=audit(11/04/26 13:55:00.573:243) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x557b557a0ed0 a1=0x557b557a21d0 a2=0x557b557a3140 a3=0x8 items=2 ppid=2267 pid=2320 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=4 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:55:00.625:244) : proctitle=tail -20 
+type=PATH msg=audit(11/04/26 13:55:00.625:244) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:55:00.625:244) : item=0 name=/bin/tail inode=408372 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:55:00.625:244) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:55:00.625:244) : argc=2 a0=tail a1=-20 
+type=SYSCALL msg=audit(11/04/26 13:55:00.625:244) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x557b557a0e00 a1=0x557b557a5760 a2=0x557b557a3140 a3=0x8 items=2 ppid=2267 pid=2323 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=4 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:55:00.627:245) : proctitle=ausearch -if /var/log/audit/audit.log -k privesc -i --start today 
+type=PATH msg=audit(11/04/26 13:55:00.627:245) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:55:00.627:245) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:55:00.627:245) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:55:00.627:245) : argc=8 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=privesc a5=-i a6=--start a7=today 
+type=SYSCALL msg=audit(11/04/26 13:55:00.627:245) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x557b557a0e80 a1=0x557b557a21d0 a2=0x557b557a3140 a3=0x8 items=2 ppid=2267 pid=2322 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=4 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:50.225:72) : pid=2100 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey_auth grantors=auth-key acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=? res=success' 
+----
+type=USER_LOGIN msg=audit(11/04/26 13:54:50.756:91) : pid=2100 uid=root auid=sysops ses=1 subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=ssh res=success' 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:51.075:96) : pid=2112 uid=sysops auid=sysops ses=1 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=sysops exe=/usr/bin/sudo hostname=? addr=? terminal=? res=success' 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:53.139:114) : pid=801 uid=root auid=unset ses=unset subj=system_u:system_r:local_login_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=sysops exe=/usr/bin/login hostname=srv-core.codemax.lan addr=? terminal=/dev/tty1 res=success' 
+----
+type=USER_LOGIN msg=audit(11/04/26 13:54:53.185:121) : pid=801 uid=root auid=sysops ses=3 subj=system_u:system_r:local_login_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/bin/login hostname=srv-core.codemax.lan addr=? terminal=tty1 res=success' 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:56.686:125) : pid=2189 uid=sysops auid=sysops ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=sysops exe=/usr/bin/sudo hostname=srv-core.codemax.lan addr=? terminal=/dev/tty1 res=success' 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:58.964:170) : pid=2233 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey_auth grantors=auth-key acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=? res=success' 
+----
+type=USER_LOGIN msg=audit(11/04/26 13:54:59.078:182) : pid=2233 uid=root auid=sysops ses=4 subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=ssh res=success' 
+----
+type=USER_LOGIN msg=audit(11/04/26 13:54:59.159:186) : pid=2233 uid=root auid=sysops ses=4 subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=ssh res=success' 
+----
+type=USER_AUTH msg=audit(11/04/26 13:54:59.404:191) : pid=2238 uid=sysops auid=sysops ses=4 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=sysops exe=/usr/bin/sudo hostname=? addr=? terminal=? res=success' 
+=== TRACES SSH ET PARE-FEU ===
+Nov 04 13:17:43 srv-core.codemax.lan sshd-session[2037]: Accepted publickey for sysops from 10.0.2.2 port 44922 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:17:44 srv-core.codemax.lan sshd-session[2094]: Accepted publickey for sysops from 192.168.56.1 port 44924 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:26:52 srv-core.codemax.lan sshd-session[2663]: Accepted publickey for sysops from 192.168.56.1 port 62190 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:04 srv-core.codemax.lan sshd-session[2758]: Accepted publickey for sysops from 192.168.56.1 port 23438 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:53 srv-core.codemax.lan sshd-session[2937]: Accepted publickey for sysops from 192.168.56.1 port 46998 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:28:55 srv-core.codemax.lan sshd-session[3058]: Accepted publickey for sysops from 192.168.56.11 port 39228 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:28:56 srv-core.codemax.lan sshd-session[3089]: Accepted publickey for sysops from 192.168.56.1 port 47003 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:31:04 srv-core.codemax.lan sshd-session[3469]: Accepted publickey for sysops from 192.168.56.1 port 26220 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:32:32 srv-core.codemax.lan sshd-session[3710]: Accepted publickey for sysops from 192.168.56.1 port 57647 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:37:38 srv-core.codemax.lan sshd-session[4125]: Accepted publickey for sysops from 192.168.56.1 port 62020 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:40:08 srv-core.codemax.lan sshd-session[4313]: Accepted publickey for sysops from 192.168.56.1 port 2457 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:42:51 srv-core.codemax.lan sshd-session[4521]: Accepted publickey for sysops from 192.168.56.1 port 54153 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:42:57 srv-core.codemax.lan sshd-session[4697]: Accepted publickey for sysops from 192.168.56.1 port 54158 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:46:36 srv-core.codemax.lan sshd-session[4933]: Accepted publickey for sysops from 192.168.56.1 port 41636 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:08 srv-core.codemax.lan sshd-session[5061]: Accepted publickey for sysops from 192.168.56.11 port 53778 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:47:19 srv-core.codemax.lan sshd-session[5100]: User root from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+Nov 04 13:47:41 srv-core.codemax.lan sshd-session[5120]: User nadia from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted key ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w found at /home/sysops/.ssh/authorized_keys:2
+Nov 04 13:47:53 srv-core.codemax.lan sshd-session[5132]: Accepted publickey for sysops from 192.168.56.11 port 40268 ssh2: ED25519 SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w
+Nov 04 13:48:13 srv-core.codemax.lan sshd-session[5152]: Unable to negotiate with 192.168.56.11 port 36240: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,ext-info-c,kex-strict-c-v00@openssh.com [preauth]
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:48:58 srv-core.codemax.lan sshd-session[5190]: Accepted publickey for sysops from 192.168.56.1 port 35162 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:49:08 srv-core.codemax.lan sshd-session[5323]: Invalid user pirate from 192.168.56.11 port 57735
+Nov 04 13:49:19 srv-core.codemax.lan sshd-session[5333]: Invalid user pirate from 192.168.56.11 port 53343
+Nov 04 13:49:30 srv-core.codemax.lan sshd-session[5347]: Invalid user pirate from 192.168.56.11 port 39205
+Nov 04 13:49:41 srv-core.codemax.lan sshd-session[5357]: Invalid user pirate from 192.168.56.11 port 48745
+Nov 04 13:49:52 srv-core.codemax.lan sshd-session[5367]: Invalid user pirate from 192.168.56.11 port 34699
+Nov 04 13:50:03 srv-core.codemax.lan sshd-session[5377]: Invalid user pirate from 192.168.56.11 port 47117
+Nov 04 13:50:14 srv-core.codemax.lan sshd-session[5391]: Invalid user pirate from 192.168.56.11 port 50953
+Nov 04 13:50:26 srv-core.codemax.lan sshd-session[5401]: Invalid user pirate from 192.168.56.11 port 44071
+Nov 04 13:50:37 srv-core.codemax.lan sshd-session[5411]: Invalid user pirate from 192.168.56.11 port 57079
+Nov 04 13:50:48 srv-core.codemax.lan sshd-session[5421]: Invalid user pirate from 192.168.56.11 port 33081
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:50:49 srv-core.codemax.lan sshd-session[5423]: Accepted publickey for sysops from 192.168.56.1 port 44383 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:39 srv-core.codemax.lan sshd-session[5674]: Accepted publickey for sysops from 192.168.56.1 port 33401 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:53:47 srv-core.codemax.lan sshd-session[5861]: Accepted publickey for sysops from 192.168.56.1 port 33411 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+-- Boot a39abcc9b3224674ac57f23c36c09570 --
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:50 srv-core.codemax.lan sshd-session[2100]: Accepted publickey for sysops from 192.168.56.1 port 33451 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted key ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE found at /home/sysops/.ssh/authorized_keys:1
+Nov 04 13:54:58 srv-core.codemax.lan sshd-session[2233]: Accepted publickey for sysops from 192.168.56.1 port 37463 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:54:50 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32684 DF PROTO=TCP SPT=33451 DPT=2242 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:54:58 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32701 DF PROTO=TCP SPT=37463 DPT=2242 WINDOW=65535 RES=0x00 SYN URGP=0 
+Removed "/etc/systemd/system/timers.target.wants/helios-watch-auth.timer".

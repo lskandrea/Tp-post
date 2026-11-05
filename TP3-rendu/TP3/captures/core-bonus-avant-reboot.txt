@@ -1,0 +1,207 @@
+=== DEMARRAGE SSH AVEC ADRESSES SPECIFIQUES ===
+=== BONUS CRYPTO ===
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+aes128-ctr
+aes192-ctr
+aes256-ctr
+aes128-gcm@openssh.com
+aes256-gcm@openssh.com
+chacha20-poly1305@openssh.com
+diffie-hellman-group1-sha1
+diffie-hellman-group14-sha1
+diffie-hellman-group14-sha256
+diffie-hellman-group16-sha512
+diffie-hellman-group18-sha512
+diffie-hellman-group-exchange-sha1
+diffie-hellman-group-exchange-sha256
+ecdh-sha2-nistp256
+ecdh-sha2-nistp384
+ecdh-sha2-nistp521
+curve25519-sha256
+curve25519-sha256@libssh.org
+sntrup761x25519-sha512
+sntrup761x25519-sha512@openssh.com
+mlkem768x25519-sha256
+DEFAULT:NO-SHA1
+passwordauthentication no
+ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes256-ctr
+macs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
+kexalgorithms curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512
+authenticationmethods publickey
+=== RAPPORTS AUDIT ===
+
+Summary Report
+======================
+Range of time in logs: 01/01/70 01:00:00.000 - 11/04/26 13:53:42.094
+Selected time for report: 11/01/26 00:00:00 - 11/04/26 13:53:42.094
+Number of changes in configuration: 210
+Number of changes to accounts, groups, or roles: 52
+Number of logins: 144
+Number of failed logins: 30
+Number of authentications: 289
+Number of failed authentications: 15
+Number of users: 7
+Number of terminals: 7
+Number of host names: 5
+Number of executables: 64
+Number of commands: 67
+Number of files: 96
+Number of AVC's: 0
+Number of MAC events: 180
+Number of failed syscalls: 15
+Number of anomaly events: 19
+Number of responses to anomaly events: 1
+Number of crypto events: 1646
+Number of integrity events: 0
+Number of virt events: 0
+Number of keys: 6
+Number of process IDs: 971
+Number of events: 7250
+
+
+Executable Summary Report
+=================================
+total  file
+=================================
+3422  /usr/libexec/openssh/sshd-session
+1052  /usr/lib/systemd/systemd
+784  /usr/bin/sudo
+293  /usr/bin/su
+191  /usr/bin/python3.9
+100  /usr/sbin/auditctl
+42  /usr/bin/login
+30  /usr/sbin/unix_chkpwd
+29  /usr/bin/bash
+21  /usr/bin/install
+19  /usr/lib/systemd/systemd-update-utmp
+17  /usr/bin/chage
+17  /usr/bin/journalctl
+15  /usr/sbin/useradd
+15  /usr/bin/systemctl
+14  /usr/bin/man.man-db
+13  /usr/bin/tail
+10  /usr/sbin/groupadd
+10  /usr/sbin/ausearch
+10  /usr/bin/grep
+9  /usr/bin/rm
+9  /usr/bin/cat
+6  /usr/sbin/usermod
+6  /usr/bin/touch
+5  /usr/bin/udevadm
+5  /usr/lib/systemd/systemd-logind
+5  /usr/bin/ls
+5  /usr/sbin/aureport
+5  /usr/sbin/sshd
+4  /usr/sbin/tcpdump
+4  /usr/lib/systemd/systemd-journald
+4  /usr/bin/gawk
+4  /usr/bin/sleep
+4  /usr/bin/sed
+4  /usr/bin/systemd-analyze
+4  /usr/bin/flock
+3  /usr/local/bin/helios-lastlog
+3  /usr/bin/mktemp
+3  /usr/bin/date
+2  /usr/bin/gpasswd
+2  /usr/bin/cmp
+2  /usr/sbin/sefcontext_compile
+2  /usr/sbin/load_policy
+2  /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+2  /usr/bin/logger
+2  /usr/bin/iconv
+2  /usr/bin/col
+2  /usr/bin/preconv
+2  /usr/bin/tbl
+2  /usr/bin/gzip
+2  /usr/bin/locale
+2  /usr/bin/groff
+2  /usr/bin/grotty
+2  /usr/bin/troff
+2  /usr/bin/ssh
+1  /usr/sbin/faillock
+1  /usr/bin/passwd
+1  /usr/bin/env
+1  /usr/bin/head
+1  /usr/bin/cp
+1  /usr/sbin/setfiles
+1  /usr/sbin/ss
+1  /usr/bin/tr
+1  /usr/bin/mkdir
+=== BONUS IMMUTABILITE ===
+No rules
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 4
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 4
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 1
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 2
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+enabled 2
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+Suppression des regles immuables rc=255
+/sbin/augenrules: Audit system is in immutable mode - exiting with no changes
+Fichier prepare en -e 1; le noyau reste en enabled 2 jusqu au redemarrage.
+enabled 2
+failure 1
+pid 601
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+  0 5b45d0cd6d384221a9d6e450e0183ce1 Wed 2026-11-04 13:17:15 CET Wed 2026-11-04 13:53:42 CET
+Pret pour le redemarrage.
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Old style watch rules are slower
+Error deleting rule (Operation not permitted)
+There was an error while processing parameters

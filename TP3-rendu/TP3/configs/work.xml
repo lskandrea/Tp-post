@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Work</short>
+  <description>For use in work areas. You mostly trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <rule>
+    <port port="10051" protocol="tcp"/>
+    <reject/>
+  </rule>
+  <rule priority="-100">
+    <source ipset="helios-blacklist"/>
+    <drop/>
+  </rule>
+  <rule>
+    <port port="2242" protocol="tcp"/>
+    <log prefix="SSH-NEW " level="info">
+      <limit value="3/m"/>
+    </log>
+    <accept>
+      <limit value="6/m"/>
+    </accept>
+  </rule>
+  <source address="192.168.56.0/24"/>
+  <forward/>
+</zone>

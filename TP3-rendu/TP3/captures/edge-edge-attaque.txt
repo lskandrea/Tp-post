@@ -1,0 +1,13 @@
+=== ATTAQUE SIMULEE DEPUIS SRV-EDGE ===
+2026-11-04T13:49:07+01:00
+Tentative pirate 01: rc=255
+Tentative pirate 02: rc=255
+Tentative pirate 03: rc=255
+Tentative pirate 04: rc=255
+Tentative pirate 05: rc=255
+Tentative pirate 06: rc=255
+Tentative pirate 07: rc=255
+Tentative pirate 08: rc=255
+Tentative pirate 09: rc=255
+Tentative pirate 10: rc=255
+2026-11-04T13:50:48+01:00

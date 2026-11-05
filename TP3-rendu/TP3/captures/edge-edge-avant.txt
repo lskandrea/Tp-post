@@ -1,0 +1,109 @@
+=== POSTE DISTANT ===
+srv-edge.codemax.lan
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             10.0.2.15/24 fd17:625c:f037:2:170b:f18:517d:eec6/64 fe80::6ae1:691f:96f3:9741/64 
+enp0s8           UP             192.168.56.11/24 
+enp0s9           UP             10.42.0.11/24 
+enp0s9.42@enp0s9 UP             10.42.42.11/24 
+Rocky Linux 9 - BaseOS                          8.6 MB/s |  46 MB     00:05    
+Rocky Linux 9 - AppStream                       8.1 MB/s |  30 MB     00:03    
+Rocky Linux 9 - Extras                           32 kB/s |  17 kB     00:00    
+Dependencies resolved.
+================================================================================
+ Package          Architecture Version                    Repository       Size
+================================================================================
+Installing:
+ nmap             x86_64       3:7.92-5.el9               appstream       5.4 M
+Installing dependencies:
+ libibverbs       x86_64       61.0-2.el9                 baseos          463 k
+ libpcap          x86_64       14:1.10.0-4.el9_8.1        baseos          171 k
+ nmap-ncat        x86_64       3:7.92-5.el9               appstream       222 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 6.3 M
+Installed size: 26 M
+Downloading Packages:
+(1/4): libibverbs-61.0-2.el9.x86_64.rpm         2.5 MB/s | 463 kB     00:00    
+(2/4): libpcap-1.10.0-4.el9_8.1.x86_64.rpm      869 kB/s | 171 kB     00:00    
+(3/4): nmap-ncat-7.92-5.el9.x86_64.rpm          2.2 MB/s | 222 kB     00:00    
+(4/4): nmap-7.92-5.el9.x86_64.rpm               7.2 MB/s | 5.4 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           5.8 MB/s | 6.3 MB     00:01     
+Rocky Linux 9 - BaseOS                          1.1 MB/s | 1.7 kB     00:00    
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libibverbs-61.0-2.el9.x86_64                           1/4 
+  Installing       : libpcap-14:1.10.0-4.el9_8.1.x86_64                     2/4 
+  Installing       : nmap-ncat-3:7.92-5.el9.x86_64                          3/4 
+  Running scriptlet: nmap-ncat-3:7.92-5.el9.x86_64                          3/4 
+  Installing       : nmap-3:7.92-5.el9.x86_64                               4/4 
+  Running scriptlet: nmap-3:7.92-5.el9.x86_64                               4/4 
+  Verifying        : libibverbs-61.0-2.el9.x86_64                           1/4 
+  Verifying        : libpcap-14:1.10.0-4.el9_8.1.x86_64                     2/4 
+  Verifying        : nmap-3:7.92-5.el9.x86_64                               3/4 
+  Verifying        : nmap-ncat-3:7.92-5.el9.x86_64                          4/4 
+
+Installed:
+  libibverbs-61.0-2.el9.x86_64        libpcap-14:1.10.0-4.el9_8.1.x86_64       
+  nmap-3:7.92-5.el9.x86_64            nmap-ncat-3:7.92-5.el9.x86_64            
+
+Complete!
+=== SCAN AVANT DURCISSEMENT ===
+Starting Nmap 7.92 ( https://nmap.org ) at 2026-11-04 13:20 CET
+Nmap scan report for 192.168.56.10
+Host is up (0.0012s latency).
+
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    filtered http
+2242/tcp  filtered foliocorp
+10051/tcp filtered zabbix-trapper
+MAC Address: 08:00:27:DF:58:EC (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 6.75 seconds
+=== TEST RESEAU METIER ===
+PING 10.42.0.10 (10.42.0.10) 56(84) bytes of data.
+64 bytes from 10.42.0.10: icmp_seq=1 ttl=64 time=2.31 ms
+64 bytes from 10.42.0.10: icmp_seq=2 ttl=64 time=1.77 ms
+
+--- 10.42.0.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 1.766/2.037/2.309/0.271 ms
+PING 10.42.42.10 (10.42.42.10) 56(84) bytes of data.
+64 bytes from 10.42.42.10: icmp_seq=1 ttl=64 time=1.65 ms
+64 bytes from 10.42.42.10: icmp_seq=2 ttl=64 time=0.918 ms
+
+--- 10.42.42.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1004ms
+rtt min/avg/max/mdev = 0.918/1.282/1.646/0.364 ms
+=== CLE SSH SYSOPS ===
+Generating public/private ed25519 key pair.
+Your identification has been saved in /home/sysops/.ssh/id_ed25519
+Your public key has been saved in /home/sysops/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:OYz3hGcntW7TYfDSc7znwomBUFrWtP5YDN+H2ew2K6w sysops@srv-edge
+The key's randomart image is:
++--[ED25519 256]--+
+|           o.    |
+|          + ..   |
+|         =  =    |
+|       ooo o O B |
+|      . S.=.= % B|
+|       . *.+.B =o|
+|          . *+o++|
+|           ..++o+|
+|           E. .o.|
++----[SHA256]-----+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEnZXtjQ3oqRkrGE3B4NYrBGn0rHno8ilezTDUuP8vmX sysops@srv-edge
+Importing GPG key 0x350D275D:
+ Userid     : "Rocky Enterprise Software Foundation - Release key 2022 <releng@rockylinux.org>"
+ Fingerprint: 21CB 256A E16F C54C 6E65 2949 702D 426D 350D 275D
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-9

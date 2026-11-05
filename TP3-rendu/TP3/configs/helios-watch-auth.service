@@ -1,0 +1,23 @@
+[Unit]
+Description=Detection des connexions SSH en echec Helios
+After=firewalld.service systemd-journald.service
+Requires=firewalld.service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/local/sbin/helios-watch-auth.sh
+SuccessExitStatus=2
+UMask=0077
+StateDirectory=helios-watch-auth
+StateDirectoryMode=0700
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/run/lock
+RestrictSUIDSGID=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+

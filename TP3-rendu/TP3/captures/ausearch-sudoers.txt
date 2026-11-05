@@ -1,0 +1,136 @@
+----
+type=PROCTITLE msg=audit(11/04/26 13:31:06.615:490) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:31:06.615:490) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:31:06.615:490) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:31:06.615:490) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:31:06.615:490) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd24227a10 a2=0x434 a3=0x0 items=1 ppid=3572 pid=3592 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=11 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:31:06.615:490) : auid=sysops ses=11 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:31:06.621:491) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:31:06.621:491) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:31:06.621:491) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:31:06.621:491) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:31:06.621:491) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd24227a10 a2=0x438 a3=0x0 items=1 ppid=3572 pid=3592 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=11 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:31:06.621:491) : auid=sysops ses=11 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:31:06.666:502) : proctitle=touch /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:31:06.666:502) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:31:06.666:502) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:31:06.666:502) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:31:06.666:502) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7ffdda28ae93 a2=O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK a3=0x1b6 items=2 ppid=3528 pid=3605 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=11 comm=touch exe=/usr/bin/touch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:31:06.676:504) : proctitle=rm -f /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:31:06.676:504) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:31:06.676:504) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:31:06.676:504) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:31:06.676:504) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x55fd765b4380 a2=0x0 a3=0x100 items=2 ppid=3528 pid=3606 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=11 comm=rm exe=/usr/bin/rm subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.625:621) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:32:34.625:621) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:32:34.625:621) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd2ef806b0 a2=0x434 a3=0x0 items=0 ppid=3817 pid=3833 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:32:34.625:621) : auid=sysops ses=12 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.625:622) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:32:34.625:622) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:32:34.625:622) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd2ef806b0 a2=0x438 a3=0x0 items=0 ppid=3817 pid=3833 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:32:34.625:622) : auid=sysops ses=12 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.647:635) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:32:34.647:635) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:32:34.647:635) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:32:34.647:635) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:32:34.647:635) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd2ef82b50 a2=0x434 a3=0x0 items=1 ppid=3817 pid=3833 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:32:34.647:635) : auid=sysops ses=12 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.650:636) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:32:34.650:636) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:32:34.650:636) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:32:34.650:636) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:32:34.650:636) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd2ef82b50 a2=0x438 a3=0x0 items=1 ppid=3817 pid=3833 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:32:34.650:636) : auid=sysops ses=12 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.694:647) : proctitle=touch /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:32:34.694:647) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:32:34.694:647) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:32:34.694:647) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:32:34.694:647) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7ffc2a6cce93 a2=O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK a3=0x1b6 items=2 ppid=3771 pid=3845 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=touch exe=/usr/bin/touch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:32:34.707:649) : proctitle=rm -f /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:32:34.707:649) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:32:34.707:649) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:32:34.707:649) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:32:34.707:649) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x560f7eb20380 a2=0x0 a3=0x100 items=2 ppid=3771 pid=3846 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=12 comm=rm exe=/usr/bin/rm subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.720:875) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.720:875) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.720:875) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd31f729e0 a2=0x434 a3=0x0 items=0 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.720:875) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.720:876) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.720:876) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.720:876) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd31f729e0 a2=0x438 a3=0x0 items=0 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.720:876) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.739:889) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:42:53.739:889) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.739:889) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.739:889) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.739:889) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd31f74e80 a2=0x434 a3=0x0 items=1 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.739:889) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.745:890) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:42:53.745:890) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.745:890) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:42:53.745:890) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:42:53.745:890) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd31f74e80 a2=0x438 a3=0x0 items=1 ppid=4622 pid=4638 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:42:53.745:890) : auid=sysops ses=15 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.789:901) : proctitle=touch /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:42:53.789:901) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:53.789:901) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.789:901) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:42:53.789:901) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7fff1f752e93 a2=O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK a3=0x1b6 items=2 ppid=4580 pid=4650 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=touch exe=/usr/bin/touch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:42:53.797:903) : proctitle=rm -f /etc/sudoers.d/test-audit 
+type=PATH msg=audit(11/04/26 13:42:53.797:903) : item=1 name=/etc/sudoers.d/test-audit inode=656600 dev=08:01 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:42:53.797:903) : item=0 name=/etc/sudoers.d/ inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:42:53.797:903) : cwd=/home/sysops 
+type=SYSCALL msg=audit(11/04/26 13:42:53.797:903) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x563bf732a380 a2=0x0 a3=0x100 items=2 ppid=4580 pid=4651 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=15 comm=rm exe=/usr/bin/rm subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(11/04/26 13:53:42.346:1585) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:53:42.346:1585) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:53:42.346:1585) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffc7198cd90 a2=0x434 a3=0x0 items=0 ppid=5794 pid=5814 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=22 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:53:42.346:1585) : auid=sysops ses=22 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:53:42.346:1586) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/04/26 13:53:42.346:1586) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:53:42.346:1586) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc7198cd90 a2=0x438 a3=0x0 items=0 ppid=5794 pid=5814 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=22 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:53:42.346:1586) : auid=sysops ses=22 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=remove_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:53:42.365:1599) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:53:42.365:1599) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:53:42.365:1599) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:53:42.365:1599) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:53:42.365:1599) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffc7198f230 a2=0x434 a3=0x0 items=1 ppid=5794 pid=5814 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=22 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:53:42.365:1599) : auid=sysops ses=22 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:53:42.365:1600) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:53:42.365:1600) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:53:42.365:1600) : cwd=/home/sysops 
+type=SOCKADDR msg=audit(11/04/26 13:53:42.365:1600) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:53:42.365:1600) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc7198f230 a2=0x438 a3=0x0 items=1 ppid=5794 pid=5814 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=22 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:53:42.365:1600) : auid=sysops ses=22 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:54:23.696:11) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:54:23.696:11) : item=0 name=/etc/ inode=655361 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:54:23.696:11) : cwd=/ 
+type=SOCKADDR msg=audit(11/04/26 13:54:23.696:11) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:54:23.696:11) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fff3de85b70 a2=0x434 a3=0x0 items=1 ppid=606 pid=633 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=system_u:system_r:unconfined_service_t:s0 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:54:23.696:11) : auid=unset ses=unset subj=system_u:system_r:unconfined_service_t:s0 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/04/26 13:54:23.696:12) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/04/26 13:54:23.696:12) : item=0 name=/etc/sudoers.d inode=656187 dev=08:01 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:54:23.696:12) : cwd=/ 
+type=SOCKADDR msg=audit(11/04/26 13:54:23.696:12) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/04/26 13:54:23.696:12) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7fff3de85b70 a2=0x438 a3=0x0 items=1 ppid=606 pid=633 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=system_u:system_r:unconfined_service_t:s0 key=(null) 
+type=CONFIG_CHANGE msg=audit(11/04/26 13:54:23.696:12) : auid=unset ses=unset subj=system_u:system_r:unconfined_service_t:s0 op=add_rule key=sudoers list=exit res=yes 

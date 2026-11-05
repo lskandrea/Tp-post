@@ -1,0 +1,32 @@
+=== ATTENTE DE FIN DE FENETRE ===
+=== REACTIVATION DU TIMER ===
+active
+NEXT                        LEFT     LAST PASSED UNIT                    ACTIVATES
+Wed 2026-11-04 14:02:00 CET 44s left -    -      helios-watch-auth.timer helios-watch-auth.service
+
+1 timers listed.
+Pass --all to see loaded but inactive timers, too.
+
+no
+Poste de test debloque, timer actif.
+=== VERIFICATIONS ===
+success
+active
+active
+active
+active
+active
+Regles audit: 12; demarrages persistants: 2
+=== EXPORT CONFIGS ===
+=== NETTOYAGE DES CLES DE TEST INTERDITES ===
+Les cles de sysops et julien sont conservees, les cles de test root/nadia sont retirees.
+=== HISTORIQUE DETECTEUR ===
+Nov 04 13:49:01 srv-core.codemax.lan helios-watch-auth[5279]: Controle termine nouveaux_blocages=0 fenetre=10min
+Nov 04 13:49:02 srv-core.codemax.lan helios-watch-auth[5286]: Une instance est deja en cours (rc=2).
+Nov 04 13:50:52 srv-core.codemax.lan helios-watch-auth[5478]: BLOCAGE source=192.168.56.11 echecs=10 fenetre=10min seuil=5
+Nov 04 13:50:52 srv-core.codemax.lan helios-watch-auth[5479]: Controle termine nouveaux_blocages=1 fenetre=10min
+Nov 04 13:50:55 srv-core.codemax.lan helios-watch-auth[5499]: Controle termine nouveaux_blocages=0 fenetre=10min
+-- Boot a39abcc9b3224674ac57f23c36c09570 --
+Nov 04 14:01:15 srv-core.codemax.lan helios-watch-auth[2762]: Controle termine nouveaux_blocages=0 fenetre=10min
+Tous les controles finaux sont passes.
+Created symlink /etc/systemd/system/timers.target.wants/helios-watch-auth.timer -> /etc/systemd/system/helios-watch-auth.timer.

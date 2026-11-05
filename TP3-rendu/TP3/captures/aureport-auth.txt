@@ -1,0 +1,11 @@
+
+Authentication Summary Report
+=============================
+total  acct
+=============================
+229  sysops
+31  julien
+28  nadia
+21  audit-ext
+8  tarek
+1  root

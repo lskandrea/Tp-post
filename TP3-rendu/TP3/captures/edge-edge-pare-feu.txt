@@ -1,0 +1,61 @@
+=== SCAN AVEC ZONES ET PORT22 ===
+Starting Nmap 7.92 ( https://nmap.org ) at 2026-11-04 13:29 CET
+Nmap scan report for 192.168.56.10
+Host is up (0.0015s latency).
+
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    filtered http
+10051/tcp filtered zabbix-trapper
+MAC Address: 08:00:27:DF:58:EC (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 6.67 seconds
+=== PORT SUPERVISION INTERDIT EN ADMIN ===
+rc=1
+=== RAFale DE 12 CONNEXIONS SSH ===
+Tentative 01: rc=0
+Tentative 02: rc=0
+Tentative 03: rc=0
+Tentative 04: rc=0
+Tentative 05: rc=1
+Tentative 06: rc=1
+Tentative 07: rc=1
+Tentative 08: rc=1
+Tentative 09: rc=1
+Tentative 10: rc=1
+Tentative 11: rc=1
+Tentative 12: rc=1
+=== PORT10051 SUR RESEAU METIER ===
+rc=1 (refus possible: aucun Zabbix installe au TP3)
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connection refused.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connected to 192.168.56.10:22.
+Ncat: 0 bytes sent, 0 bytes received in 0.03 seconds.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connected to 192.168.56.10:22.
+Ncat: 0 bytes sent, 0 bytes received in 0.03 seconds.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connected to 192.168.56.10:22.
+Ncat: 0 bytes sent, 0 bytes received in 0.03 seconds.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connected to 192.168.56.10:22.
+Ncat: 0 bytes sent, 0 bytes received in 0.03 seconds.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: TIMEOUT.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: TIMEOUT.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: TIMEOUT.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connection refused.

@@ -1,0 +1,19 @@
+SEPT TESTS SSH - RESULTATS ENREGISTRES
+=== TEST1 ANCIEN PORT ===
+TEST1 rc=1 (nonzero attendu)
+=== TEST2 SYSOPS PAR CLE ===
+TEST2 rc=0 (0 attendu)
+=== TEST3 ROOT ===
+TEST3 rc=255 (255 attendu)
+=== TEST4 MOT DE PASSE ===
+TEST4 rc=255 (255 attendu)
+=== TEST5 NADIA HORS GROUPE ===
+TEST5 rc=255 (255 attendu)
+=== TEST6 TUNNEL SYSOPS ===
+channel 1: open failed: administratively prohibited: open failed
+TEST6 refus du canal confirme
+=== TEST7 ANCIEN KEX SHA1 ===
+TEST7 rc=255 (255 attendu)
+Unable to negotiate with 192.168.56.10 port 2242: no matching key exchange method
+found. Their offer: curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-
+group16-sha512,ext-info-s,kex-strict-s-v00@openssh.com

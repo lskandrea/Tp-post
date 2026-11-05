@@ -1,0 +1,73 @@
+=== TRACES DU PARE-FEU AVANT SSH ===
+Nov 04 13:32:32 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32116 DF PROTO=TCP SPT=57647 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:37:38 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32179 DF PROTO=TCP SPT=62020 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:40:08 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32234 DF PROTO=TCP SPT=2457 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:42:51 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32294 DF PROTO=TCP SPT=54153 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:42:57 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32364 DF PROTO=TCP SPT=54158 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+Nov 04 13:46:36 srv-core.codemax.lan kernel: SSH-NEW IN=enp0s8 OUT= MAC=08:00:27:df:58:ec:0a:00:27:00:00:04:08:00 SRC=192.168.56.1 DST=192.168.56.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=32418 DF PROTO=TCP SPT=41636 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0 
+-- No entries --
+=== CRYPTO-POLICIES ===
+DEFAULT
+# This system is following system-wide crypto policy. The changes to
+# crypto properties (Ciphers, MACs, ...) will not have any effect in
+# this or following included files. To override some configuration option,
+# write it before this block or include it before this file.
+# Please, see manual pages for update-crypto-policies(8) and sshd_config(5).
+Include /etc/crypto-policies/back-ends/opensshserver.config
+
+SyslogFacility AUTHPRIV
+Setting system policy to DEFAULT:NO-SHA1
+Note: System-wide crypto policies are applied on application start-up.
+It is recommended to restart the system for the change of policies
+to fully take place.
+Syntaxe SSH valide
+=== SELINUX ===
+ssh_port_t                     tcp      2242, 22
+=== OUVERTURE2242 FERMETURE22 ===
+success
+success
+success
+success
+success
+success
+LISTEN 0      128       10.42.0.10:2242      0.0.0.0:*    users:(("sshd",pid=5037,fd=7))
+LISTEN 0      128    192.168.56.10:2242      0.0.0.0:*    users:(("sshd",pid=5037,fd=8))
+=== PARAMETRES EFFECTIFS ===
+port 2242
+listenaddress 192.168.56.10:2242
+listenaddress 10.42.0.10:2242
+maxauthtries 3
+permitrootlogin no
+passwordauthentication no
+kbdinteractiveauthentication no
+allowtcpforwarding no
+ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes256-ctr
+macs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
+kexalgorithms curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512
+hostkeyalgorithms ssh-ed25519,rsa-sha2-512
+loglevel VERBOSE
+allowgroups ssh-admins
+authenticationmethods publickey
+permitopen any
+allowtcpforwarding yes
+permitopen localhost:10051
+Nov 04 13:42:57 srv-core.codemax.lan sshd-session[4697]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:42:58 srv-core.codemax.lan sshd-session[4697]: pam_unix(sshd:session): session closed for user sysops
+Nov 04 13:46:36 srv-core.codemax.lan sshd-session[4933]: Accepted publickey for sysops from 192.168.56.1 port 41636 ssh2: ED25519 SHA256:TawUd14r4jINbcRM9VBTrA8AEv5mlyqJRrnfu9Ye8AE
+Nov 04 13:46:36 srv-core.codemax.lan sshd-session[4933]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+Nov 04 13:46:37 srv-core.codemax.lan sshd[747]: Received signal 15; terminating.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Stopping OpenSSH server daemon...
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: sshd.service: Deactivated successfully.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Stopped OpenSSH server daemon.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:46:37 srv-core.codemax.lan sshd[5006]: Server listening on 0.0.0.0 port 22.
+Nov 04 13:46:37 srv-core.codemax.lan sshd[5006]: Server listening on :: port 22.
+Nov 04 13:46:37 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5006]: Received signal 15; terminating.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Stopping OpenSSH server daemon...
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: sshd.service: Deactivated successfully.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Stopped OpenSSH server daemon.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Starting OpenSSH server daemon...
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5037]: Server listening on 10.42.0.10 port 2242.
+Nov 04 13:46:48 srv-core.codemax.lan sshd[5037]: Server listening on 192.168.56.10 port 2242.
+Nov 04 13:46:48 srv-core.codemax.lan systemd[1]: Started OpenSSH server daemon.

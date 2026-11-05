@@ -1,0 +1,61 @@
+ausearch is /sbin/ausearch
+ausearch is /usr/sbin/ausearch
+=== FICHIER EXPLICITE ===
+type=PROCTITLE msg=audit(11/04/26 13:40:09.261:765) : proctitle=/bin/bash -c /bin/bash /tmp/helios-tp3-audit-recherche.sh 
+type=PATH msg=audit(11/04/26 13:40:09.261:765) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.261:765) : item=0 name=/bin/bash inode=402476 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:shell_exec_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.261:765) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.261:765) : argc=2 a0=/bin/bash a1=/tmp/helios-tp3-audit-recherche.sh 
+type=SYSCALL msg=audit(11/04/26 13:40:09.261:765) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x558bd6951a10 a1=0x558bd6951a50 a2=0x558bd694fa80 a3=0x8 items=2 ppid=4347 pid=4376 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=bash exe=/usr/bin/bash subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:40:09.278:766) : proctitle=tail -20 
+type=PATH msg=audit(11/04/26 13:40:09.278:766) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.278:766) : item=0 name=/bin/tail inode=408372 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.278:766) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.278:766) : argc=2 a0=tail a1=-20 
+type=SYSCALL msg=audit(11/04/26 13:40:09.278:766) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc5c50 a1=0x561458cc6500 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4378 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:40:09.278:767) : proctitle=ausearch -if /var/log/audit/audit.log -k privesc -i 
+type=PATH msg=audit(11/04/26 13:40:09.278:767) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.278:767) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.278:767) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.278:767) : argc=6 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-k a4=privesc a5=-i 
+type=SYSCALL msg=audit(11/04/26 13:40:09.278:767) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc6010 a1=0x561458cc3000 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4377 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+=== SYSCALL ===
+type=CWD msg=audit(11/04/26 13:40:09.340:768) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.340:768) : argc=2 a0=tail a1=-10 
+type=SYSCALL msg=audit(11/04/26 13:40:09.340:768) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc5d10 a1=0x561458cc65c0 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4380 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:40:09.340:769) : proctitle=ausearch -if /var/log/audit/audit.log -m SYSCALL -i 
+type=PATH msg=audit(11/04/26 13:40:09.340:769) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.340:769) : item=0 name=/sbin/ausearch inode=419626 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.340:769) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.340:769) : argc=6 a0=ausearch a1=-if a2=/var/log/audit/audit.log a3=-m a4=SYSCALL a5=-i 
+type=SYSCALL msg=audit(11/04/26 13:40:09.340:769) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc60d0 a1=0x561458cc3000 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4379 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+=== EXTRAIT BRUT ===
+type=CONFIG_CHANGE msg=audit(1793795554.650:636): auid=1000 ses=12 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key="sudoers" list=4 res=1AUID="sysops"
+type=SYSCALL msg=audit(1793795554.694:647): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7ffc2a6cce93 a2=941 a3=1b6 items=2 ppid=3771 pid=3845 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=12 comm="touch" exe="/usr/bin/touch" subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key="sudoers"ARCH=x86_64 SYSCALL=openat AUID="sysops" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SYSCALL msg=audit(1793795554.707:649): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=560f7eb20380 a2=0 a3=100 items=2 ppid=3771 pid=3846 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=12 comm="rm" exe="/usr/bin/rm" subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key="sudoers"ARCH=x86_64 SYSCALL=unlinkat AUID="sysops" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+=== SANS ENRICHISSEMENT ===
+type=PROCTITLE msg=audit(11/04/26 13:40:09.402:770) : proctitle=tail -3 
+type=PATH msg=audit(11/04/26 13:40:09.402:770) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.402:770) : item=0 name=/bin/tail inode=408372 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.402:770) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.402:770) : argc=2 a0=tail a1=-3 
+type=SYSCALL msg=audit(11/04/26 13:40:09.402:770) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc1ed0 a1=0x561458cc6500 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4382 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:40:09.402:771) : proctitle=grep key="sudoers" /var/log/audit/audit.log 
+type=PATH msg=audit(11/04/26 13:40:09.402:771) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.402:771) : item=0 name=/bin/grep inode=404989 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.402:771) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.402:771) : argc=3 a0=grep a1=key="sudoers" a2=/var/log/audit/audit.log 
+type=SYSCALL msg=audit(11/04/26 13:40:09.402:771) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc5cc0 a1=0x561458cc65a0 a2=0x561458cc57d0 a3=0x8 items=2 ppid=4376 pid=4381 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=grep exe=/usr/bin/grep subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(11/04/26 13:40:09.427:772) : proctitle=sed s/\x1d.*// /var/log/audit/audit.log 
+type=PATH msg=audit(11/04/26 13:40:09.427:772) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=403397 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/04/26 13:40:09.427:772) : item=0 name=/bin/sed inode=403997 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/04/26 13:40:09.427:772) : cwd=/home/sysops 
+type=EXECVE msg=audit(11/04/26 13:40:09.427:772) : argc=3 a0=sed a1=s/\x1d.*// a2=/var/log/audit/audit.log 
+type=SYSCALL msg=audit(11/04/26 13:40:09.427:772) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561458cc1e90 a1=0x561458cc65b0 a2=0x561458cc57d0 a3=0x1b6 items=2 ppid=4376 pid=4383 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=14 comm=sed exe=/usr/bin/sed subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+=== ENVIRONNEMENT ===
+LC_ALL=C
