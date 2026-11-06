@@ -1,0 +1,80 @@
+srv-core.codemax.lan
+NAME="Rocky Linux"
+VERSION="9.8 (Blue Onyx)"
+RELEASE_TYPE="stable"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.8"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Rocky Linux 9.8 (Blue Onyx)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:9::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2032-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-9"
+ROCKY_SUPPORT_PRODUCT_VERSION="9.8"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.8"
+active
+active
+# /etc/systemd/system/helios.target
+[Unit]
+Description=Pile applicative Helios
+Requires=multi-user.target
+After=multi-user.target
+AllowIsolate=no
+
+[Install]
+WantedBy=multi-user.target
+drop
+drop
+  interfaces: enp0s3
+internal
+  interfaces: bond0 enp0s10 enp0s9 bond0.42
+work
+  interfaces: enp0s8
+  sources: 192.168.56.0/24
+port 2242
+permitrootlogin no
+passwordauthentication no
+allowgroups ssh-admins
+2026-11-05T01:28:17+01:00,0.21,1394260
+2026-11-05T01:28:22+01:00,0.20,1394268
+2026-11-05T01:28:27+01:00,0.18,1394276
+drwxr-xr-x. 5 root root 4096  3 nov.  04:58 /srv/helios
+# file: /var/lib/helios/telemetry.csv
+# owner: helios
+# group: helios
+user::rw-
+group::r--
+other::r--
+
+UNIT FILE                 STATE   PRESET
+helios-inbox.path         enabled disabled
+helios-archive.service    static  -
+helios-collect.service    enabled disabled
+helios-watch-auth.service static  -
+helios.target             enabled disabled
+helios-archive.timer      enabled disabled
+helios-watch-auth.timer   enabled disabled
+
+7 unit files listed.
+le paquet zabbix-agent2 n'est pas installé
+le paquet sysstat n'est pas installé
+Enforcing
+rocky-addons.repo
+rocky-devel.repo
+rocky-extras.repo
+rocky.repo
+rocky-security.repo
+919eb16f275a2ed14fb640dbb144aac4c60ac134a3789eaf3acd19432163d0c2  /etc/systemd/system/helios-archive.service
+79b9ae77eb54a6991ed2cc89b52bd9e7aaefbe908484957847e34ef6b41c91c6  /etc/systemd/system/helios-collect.service
+042b25df8a2eedfe2db11096d4d12577f52564bb00646649460a1d521f0ec13c  /etc/systemd/system/helios-watch-auth.service
+98a2b5ad42d662f2d545194f699eff1ac6b4546c3fdeef799ea8aa6276cd23f4  /etc/systemd/system/helios-archive.timer
+f24903e5a8f32ce296c0b69f956ba9a65356edcf76955e3fac1e48a3408bc37e  /etc/systemd/system/helios-watch-auth.timer
+
+CODE_RETOUR=0

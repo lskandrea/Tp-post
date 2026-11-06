@@ -1,0 +1,21 @@
+Version API : 7.0.32
+Connexion API Admin reussie ; mot de passe par defaut remplace (non exporte).
+Element cree/configure : helios.suivi.http id=50747
+Element cree/configure : helios.suivi.age id=50748
+Declencheur cree/configure : Helios - portail HTTP indisponible priorite=4
+Declencheur cree/configure : Helios - publication figee depuis plus de 5 minutes priorite=3
+Export configuration sans identifiants : /tmp/helios-zabbix-export.json
+Runtime control command was forwarded successfully
+=== CONFORMITE PROJET APRES INSTALLATION DU BONUS ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[OK] E6
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 9/9
+
+CODE_RETOUR=0
