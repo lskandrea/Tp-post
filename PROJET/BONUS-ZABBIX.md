@@ -23,7 +23,7 @@ Les deux éléments et les déclencheurs sont activés. L'export Zabbix importab
 
 Résultats mesurés : code HTTP **200 → 0 → 200** ; âge du fichier **306 s** lors de l'alerte, puis **2 s** après publication. Les événements serveur sont **26/27** pour le problème HTTP et son rétablissement, **28/29** pour la publication figée et son rétablissement. Les deux éléments restent supportés (`state=0`, aucune erreur). L'audit après ces essais renvoie **Bilan : 9/9**, rc 0.
 
-Preuves : [installation](preuves/bonus-installation.txt), [configuration](preuves/bonus-configuration.txt), [collectes et événements des tests réels](preuves/bonus-alertes-reelles.txt), [état final](preuves/bonus-etat-final.txt).
+Preuves : [configuration](preuves/bonus-configuration.txt), [collectes et événements des tests réels](preuves/bonus-alertes-reelles.txt), [état final](preuves/bonus-etat-final.txt).
 
 ![Deux éléments dans Latest data](preuves/bonus-elements-frontend.png)
 
@@ -37,6 +37,6 @@ Preuves : [installation](preuves/bonus-installation.txt), [configuration](preuve
 
 Les services `mariadb`, `zabbix-server`, `httpd` et `php-fpm` sont activés au démarrage. Les incidents sont visibles dans **Monitoring → Problems** ; les valeurs sont dans **Monitoring → Latest data** en filtrant sur `Helios`. Les tests ne configurent pas d'envoi de mail ni de notification externe.
 
-Les archives quotidiennes E9 reconstruisent le portail et sa sonde d'agent. L'export ajouté permet de recréer les objets de supervision ; l'historique SQL du serveur Zabbix n'est pas inclus dans ces archives. Pour une exploitation durable, ajouter une sauvegarde cohérente de MariaDB et un accès web chiffré. Les scripts d'installation et de configuration fournis en `preuves/commandes/` régénèrent les secrets localement ; aucun secret réel n'est livré.
+Les archives quotidiennes E9 reconstruisent le portail et sa sonde d'agent. L'export ajouté permet de recréer les objets de supervision ; l'historique SQL du serveur Zabbix n'est pas inclus dans ces archives. Pour une exploitation durable, ajouter une sauvegarde cohérente de MariaDB et un accès web chiffré. Les identifiants restent hors du rendu.
 
 Références : [installation officielle et SELinux](https://www.zabbix.com/documentation/7.0/en/manual/installation/install_from_packages), [création d'éléments](https://www.zabbix.com/documentation/7.0/en/manual/api/reference/item/create), [création de déclencheurs](https://www.zabbix.com/documentation/7.0/en/manual/api/reference/trigger/create).
