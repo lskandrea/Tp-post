@@ -1,0 +1,33 @@
+=== INSTALLATION BONUS ZABBIX ===
+Last metadata expiration check: 0:02:37 ago on Thu Nov  5 11:14:02 2026.
+Package mariadb-server-3:10.5.29-3.el9_7.x86_64 is already installed.
+Package zabbix-server-mysql-7.0.32-release2.el9.x86_64 is already installed.
+Package zabbix-web-mysql-7.0.32-release2.el9.noarch is already installed.
+Package zabbix-apache-conf-7.0.32-release2.el9.noarch is already installed.
+Package zabbix-sql-scripts-7.0.32-release2.el9.noarch is already installed.
+Package zabbix-selinux-policy-7.0.32-release2.el9.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+success
+success
+=== ETAT DES SERVICES ===
+active
+active
+active
+active
+enabled
+enabled
+enabled
+enabled
+Frontend HTTP = 200
+LISTEN 0      511    192.168.56.10:80         0.0.0.0:*   
+LISTEN 0      4096       127.0.0.1:10051      0.0.0.0:*   
+LISTEN 0      511        127.0.0.1:80         0.0.0.0:*   
+Enforcing
+Syntax OK
+Created symlink /etc/systemd/system/multi-user.target.wants/zabbix-server.service -> /usr/lib/systemd/system/zabbix-server.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/httpd.service -> /usr/lib/systemd/system/httpd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/php-fpm.service -> /usr/lib/systemd/system/php-fpm.service.
+
+CODE_RETOUR=0

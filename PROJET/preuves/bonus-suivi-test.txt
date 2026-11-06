@@ -1,0 +1,11 @@
+2026-11-05T11:23:38+01:00
+226
+active
+inactive
+  7101:20261105:111759.152 item "Zabbix server:zabbix[process,report manager,avg,busy]" became not supported: No "report manager" processes started.
+  6891:20261105:111808.266 forced reloading of the service manager cache
+  6892:20261105:111808.266 forced reloading of the configuration cache
+  6891:20261105:111808.268 finished forced reloading of the service manager cache
+  6892:20261105:111808.312 finished forced reloading of the configuration cache
+
+CODE_RETOUR=0

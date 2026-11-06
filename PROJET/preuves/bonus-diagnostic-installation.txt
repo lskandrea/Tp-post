@@ -1,0 +1,11 @@
+/usr/share/zabbix-sql-scripts/mysql/server.sql.gz
+/usr/share/zabbix-sql-scripts/postgresql/server.sql.gz
+maintenance.inc.php
+zabbix.conf.php
+               total        used        free      shared  buff/cache   available
+Mem:            1707         432         686           0         747        1275
+Swap:           1023           0        1023
+Sys. de fichiers Taille Utilisé Dispo Uti% Monté sur
+/dev/sda1           39G    3,0G   34G   9% /
+
+CODE_RETOUR=0

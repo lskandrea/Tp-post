@@ -1,0 +1,85 @@
+=== PANNE : portail arrete ===
+[OK] E1
+[OK] E2
+[OK] E3
+[KO] E4 : systemctl is-active helios-suivi.service: 
+[OK] E5
+[OK] E6
+[OK] E7
+[KO] E8 : Sonde HTTP
+[OK] E9
+Bilan : 7/9
+Audit retourne KO comme attendu (rc=1)
+success
+=== PANNE : 8080 retire en runtime ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[KO] E6 : 8080 dans internal []
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 8/9
+Audit retourne KO comme attendu (rc=1)
+success
+=== PANNE : etat.json vieux de dix minutes ===
+[OK] E1
+[OK] E2
+[KO] E3 : etat.json perime
+[KO] E4 : systemctl is-active helios-suivi-publish.timer: 
+[OK] E5
+[OK] E6
+[OK] E7
+[KO] E8 : Sonde age: 601
+[OK] E9
+Bilan : 6/9
+Audit retourne KO comme attendu (rc=1)
+=== PANNE : delegation sudo excessive ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[KO] E5 : Commande indument autorisee: sudo -l -U lea /usr/bin/systemctl restart sshd
+[OK] E6
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 8/9
+Audit retourne KO comme attendu (rc=1)
+=== PANNE : empreinte sauvegarde invalide ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[OK] E6
+[OK] E7
+[OK] E8
+[KO] E9 : Empreinte invalide: /srv/helios/archives/suivi/suivi-20261105-013802.tar.gz
+Bilan : 8/9
+Audit retourne KO comme attendu (rc=1)
+=== RETENTION : 8 sauvegardes supplementaires ===
+suivi-20261105-014513.tar.gz: Réussi
+suivi-20261105-014514.tar.gz: Réussi
+suivi-20261105-014515.tar.gz: Réussi
+suivi-20261105-014517.tar.gz: Réussi
+suivi-20261105-014518.tar.gz: Réussi
+suivi-20261105-014519.tar.gz: Réussi
+suivi-20261105-014520.tar.gz: Réussi
+suivi-20261105-014521.tar.gz: Réussi
+Archives conservees : 7 (attendu 7)
+=== ETAT REPARE ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[OK] E6
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 9/9
+
+CODE_RETOUR=0

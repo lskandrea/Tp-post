@@ -1,0 +1,241 @@
+
+=== ETAT INITIAL 2026-11-05T11:18:46.510596+01:00 ===
+{
+  "items": [
+    {
+      "itemid": "50747",
+      "key_": "helios.suivi.http",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873917",
+      "lastvalue": "200"
+    },
+    {
+      "itemid": "50748",
+      "key_": "helios.suivi.age",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873918",
+      "lastvalue": "46"
+    }
+  ],
+  "triggers": [
+    {
+      "triggerid": "25232",
+      "description": "Helios - portail HTTP indisponible",
+      "priority": "4",
+      "value": "0",
+      "lastchange": "0"
+    },
+    {
+      "triggerid": "25233",
+      "description": "Helios - publication figee depuis plus de 5 minutes",
+      "priority": "3",
+      "value": "0",
+      "lastchange": "0"
+    }
+  ]
+}
+
+=== PANNE REELLE HTTP : alerte Haute active 2026-11-05T11:18:51.742509+01:00 ===
+{
+  "items": [
+    {
+      "itemid": "50747",
+      "key_": "helios.suivi.http",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873927",
+      "lastvalue": "0"
+    },
+    {
+      "itemid": "50748",
+      "key_": "helios.suivi.age",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873928",
+      "lastvalue": "56"
+    }
+  ],
+  "triggers": [
+    {
+      "triggerid": "25232",
+      "description": "Helios - portail HTTP indisponible",
+      "priority": "4",
+      "value": "1",
+      "lastchange": "1793873927"
+    },
+    {
+      "triggerid": "25233",
+      "description": "Helios - publication figee depuis plus de 5 minutes",
+      "priority": "3",
+      "value": "0",
+      "lastchange": "0"
+    }
+  ]
+}
+
+=== HTTP RETABLI 2026-11-05T11:19:52.379660+01:00 ===
+{
+  "items": [
+    {
+      "itemid": "50747",
+      "key_": "helios.suivi.http",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873987",
+      "lastvalue": "200"
+    },
+    {
+      "itemid": "50748",
+      "key_": "helios.suivi.age",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793873988",
+      "lastvalue": "12"
+    }
+  ],
+  "triggers": [
+    {
+      "triggerid": "25232",
+      "description": "Helios - portail HTTP indisponible",
+      "priority": "4",
+      "value": "0",
+      "lastchange": "1793873987"
+    },
+    {
+      "triggerid": "25233",
+      "description": "Helios - publication figee depuis plus de 5 minutes",
+      "priority": "3",
+      "value": "0",
+      "lastchange": "0"
+    }
+  ]
+}
+Timer arrete ; attente reelle de plus de 300 secondes, sans modifier la date du fichier.
+
+=== PANNE REELLE PUBLICATION : alerte Moyenne active 2026-11-05T11:25:01.230331+01:00 ===
+{
+  "items": [
+    {
+      "itemid": "50747",
+      "key_": "helios.suivi.http",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793874297",
+      "lastvalue": "200"
+    },
+    {
+      "itemid": "50748",
+      "key_": "helios.suivi.age",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793874298",
+      "lastvalue": "306"
+    }
+  ],
+  "triggers": [
+    {
+      "triggerid": "25232",
+      "description": "Helios - portail HTTP indisponible",
+      "priority": "4",
+      "value": "0",
+      "lastchange": "1793873987"
+    },
+    {
+      "triggerid": "25233",
+      "description": "Helios - publication figee depuis plus de 5 minutes",
+      "priority": "3",
+      "value": "1",
+      "lastchange": "1793874298"
+    }
+  ]
+}
+
+=== PUBLICATION RETABLIE 2026-11-05T11:25:51.525651+01:00 ===
+{
+  "items": [
+    {
+      "itemid": "50747",
+      "key_": "helios.suivi.http",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793874347",
+      "lastvalue": "200"
+    },
+    {
+      "itemid": "50748",
+      "key_": "helios.suivi.age",
+      "state": "0",
+      "error": "",
+      "lastclock": "1793874348",
+      "lastvalue": "2"
+    }
+  ],
+  "triggers": [
+    {
+      "triggerid": "25232",
+      "description": "Helios - portail HTTP indisponible",
+      "priority": "4",
+      "value": "0",
+      "lastchange": "1793873987"
+    },
+    {
+      "triggerid": "25233",
+      "description": "Helios - publication figee depuis plus de 5 minutes",
+      "priority": "3",
+      "value": "0",
+      "lastchange": "1793874348"
+    }
+  ]
+}
+
+=== EVENEMENTS ZABBIX REELS ===
+[
+  {
+    "eventid": "26",
+    "objectid": "25232",
+    "clock": "1793873927",
+    "value": "1",
+    "name": "Helios - portail HTTP indisponible",
+    "severity": "4"
+  },
+  {
+    "eventid": "27",
+    "objectid": "25232",
+    "clock": "1793873987",
+    "value": "0",
+    "name": "Helios - portail HTTP indisponible",
+    "severity": "0"
+  },
+  {
+    "eventid": "28",
+    "objectid": "25233",
+    "clock": "1793874298",
+    "value": "1",
+    "name": "Helios - publication figee depuis plus de 5 minutes",
+    "severity": "3"
+  },
+  {
+    "eventid": "29",
+    "objectid": "25233",
+    "clock": "1793874348",
+    "value": "0",
+    "name": "Helios - publication figee depuis plus de 5 minutes",
+    "severity": "0"
+  }
+]
+Deux problemes et leurs retablissements verifies dans les evenements du serveur.
+=== AUDIT FINAL APRES BONUS ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[OK] E6
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 9/9
+
+CODE_RETOUR=0

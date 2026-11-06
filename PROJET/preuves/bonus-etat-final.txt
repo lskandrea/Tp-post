@@ -1,0 +1,38 @@
+=== SERVICES ET DEMARRAGE AUTOMATIQUE ===
+2026-11-05T11:29:22+01:00
+active
+active
+active
+active
+active
+active
+active
+enabled
+enabled
+enabled
+enabled
+=== FRONTEND ADMINISTRATION ===
+Frontend admin = 200
+LISTEN 0      511    192.168.56.10:80         0.0.0.0:*   
+LISTEN 0      4096       127.0.0.1:10051      0.0.0.0:*   
+LISTEN 0      511        127.0.0.1:80         0.0.0.0:*   
+http
+http
+=== SELINUX ===
+Enforcing
+httpd_can_connect_zabbix --> on
+httpd_can_network_connect_db --> on
+=== SAUVEGARDE ET AUDIT ===
+[OK] E1
+[OK] E2
+[OK] E3
+[OK] E4
+[OK] E5
+[OK] E6
+[OK] E7
+[OK] E8
+[OK] E9
+Bilan : 9/9
+<no matches>
+
+CODE_RETOUR=0
