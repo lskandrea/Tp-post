@@ -1,8 +1,0 @@
-2026-11-05T02:02:32+01:00
-HTTP metier = 200
-{"genere": "2026-11-05T10:05:46.179884+00:00", "hote": "srv-core.codemax.lan", "derniere_mesure": "2026-11-05T11:05:44+01:00", "charge_1min": 3.78, "mem_dispo_ko": 1365244, "mesures": 21}
-Port admin rc=1 (attendu non nul)
-Ncat: Version 7.92 ( https://nmap.org/ncat )
-Ncat: No route to host.
-
-CODE_RETOUR=0
